@@ -31,8 +31,7 @@ the overview. The elements are just creative organizational metaphors.
 Reading the diagram:
 
 - A **diagonally split square** means an **intersection of categories** —
-  shared responsibility between two areas — *not* a readiness or status
-  flag. 
+
 - **Arrows** mean connection/dependency.
 - The **FF itself sits at the center and touches all four categories**:
   it is a physical artifact (SODI), a measured geometry (CBE), a tracking
@@ -117,22 +116,36 @@ C:\Python314\python.exe ff_calibrate.py --help
 
 Optional read-only bridge ping (requires the TD bridge already running
 per `tools/td/README.md`):
-
 ```powershell
 '{"op":"ping"}' | node tools/td/td.mjs --json -
 ```
 
+Connect to projector
+```powershell
+adb connect 192.168.0.170:5555
+```
 
-## Some Considerations
+Reset projector
+```powershell
+adb shell am force-stop com.fengmi.projector.imaging
+```
 
-- Every physical object gets a **measured spec** (dimensions, marker
-  layout) and a named frame; units are explicit.
-- Camera intrinsics/extrinsics, device offsets, and joint models are
-  **separate calibrations**.
-- Calibrated optical mapping has limits; bright ambient light and
-  occlusion degrade it.
-- Privacy and control: authenticated permissions only; the powerful
-  wscontrol Python bridge stays on localhost/trusted networks.
+Focus projector
+```powershell
+adb shell am start -a com.fengmi.projector.imaging.action.START_FOCUS
+```
+
+Switch to hdmi
+```powershell
+adb shell am start -a android.intent.action.VIEW -d "content://android.media.tv/passthrough/com.droidlogic.tvinput%2F.services.Hdmi1InputService%2FHW5" -n com.android.tv/.MainActivity
+```
+
+Make a screenshot from the proj embedded camera
+```powershell
+python tools/projector/projctl.py cam_shot .\cam_shot.jpg
+```
+
+
 
 ## The Plan
 
@@ -140,17 +153,18 @@ per `tools/td/README.md`):
 |----|---------|------|
 | **OART-01** | CBE | Existing calibration pipeline cleanup|
 | **TDCP-01** | TD | Fix and improve TD control panel |
-| **XRT-01** | SODI | Measured specifications for the Thesis, aruco codes on pages of interest, some supplimentary materials |
+| **SHELL-01** | SHELL | Hierarchical cli for controlling the projector and checking status of td-bridge |
+| **XRT-01** | XRT | Measured specifications for the Thesis, aruco codes on pages of interest, some supplimentary materials |
 
 
 ## Documents
 
-- [`docs/shared_projective_xr.pdf`](docs/shared_projective_xr.pdf) —
+- [`_docs/shared_projective_xr.pdf`](_docs/shared_projective_xr.pdf) —
   illustrated audited design.
-- [`docs/shared_projective_xr.tex`](docs/shared_projective_xr.tex) —
+- [`_docs/shared_projective_xr.tex`](_docs/shared_projective_xr.tex) —
   self-contained LaTeX source.
 
 
 ## Contributing
 
-Share, like and subscribe!
+Reduce, reuse, recycle!
