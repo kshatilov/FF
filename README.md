@@ -42,7 +42,7 @@ Reading the diagram:
 |------|-----------|-------------|
 | **FF** | CBE+TD+APP+SODI | The framework and its physical calibration reference. The framework includes a shared spatial language, neccessary algebra and guidelines for creating and documenting FFs. |
 | **HW** | CBE+SODI | Hardware category |
-| **SODI**| SODI/DOSI| Smart objects - dumb interfaces. Or dumb objects smart interfaces. Old idea of using regular non-instrumented objects as inputs for digital systems. Revibrates with MyoKey - holding a beer can and controlling smart glasses. Final delivaerable - Roman Tetrahedron (RTTH) - LED and wire-instrumented (yes) 3d-drawn tetrahedron.   
+| **SODI**| SODI/DOSI| Smart objects - dumb interfaces. Or dumb objects smart interfaces. Old idea of using regular non-instrumented objects as inputs for digital systems. Revibrates with MyoKey - holding a beer can and controlling smart glasses. Final delivaerable - Roman Dodecahedron (RDDH) - LED and wire-instrumented (yes) 3d-drawn tetrahedron.   
 |**CBE**| CBE | Anything related to compute.
 |**TD**| TD | Touch designer projects, integration scripts, the bridge.
 | **SHELL** | CBE+TD | Shell / command interface (cli) for status checking, overseeing devices, calibrations, and workflows. |
