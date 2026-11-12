@@ -6,12 +6,10 @@ FF is two things:
 
 - **A conceptual framework**: a way to give many independent devices —
   cameras, projectors, phones, wearables, sensors — one shared spatial and computational
-  reference, so art or any content can be attached to a room or to moving objects and
-  light can be rendered from whichever device is available.
+  medium, so an art piece or any content can be attached to a room or to moving objects.
 - **A physical calibration object**: the Fulcrum Frustum itself, a small
-  measured, marker-covered truncated pyramid that acts as a common ruler
-  that cameras can observe and projectors can be registered against
-  through camera measurements.
+  measured, marker-covered truncated pyramid that acts as a common ruler.
+  Cameras can observe it, and projectors can be registered against it.
 
 
 ## The framework
@@ -23,30 +21,26 @@ the overview. The elements are just creative organizational metaphors.
 
 | Category | Element | Glyph | Role |
 |----------|---------|-------|------|
-| **SODI** | GREEN EARTH | 🟩 | Smart Objects / Dumb Interfaces — physical objects, embodied interfaces|
-| **TD** | YELLOW LIGHT | 🟨 | TouchDesigner — projective mapping, animations, and show rendering |
-| **CBE** | BLUE COMPUTE / AIR | 🟦 | Compute Backend — calibration, CV, tracking, services |
-| **APP** | RED FIRE | 🟥 | Applications — experiences, demos, artworks |
+| **SODI** | EARTH | 🟩 | Smart Objects / Dumb Interfaces — physical objects, embodied interfaces|
+| **TD** |  LIGHT | 🟨 | TouchDesigner — projective mapping, animations, and show rendering |
+| **CBE** | WATER | 🟦 | Compute Backend — calibration, CV, tracking, services |
+| **APP** | FIRE | 🟥 | Applications — experiences, demos, artworks |
 
 Reading the diagram:
 
-- A **diagonally split square** means an **intersection of categories** —
+- A **diagonally split square** means an **intersection of categories**.
 
 - **Arrows** mean connection/dependency.
+
 - The **FF itself sits at the center and touches all four categories**:
   it is a physical artifact (SODI), a measured geometry (CBE), a tracking
   and rendering subject (TD), and a thing people interact with (APP).
 
 ## Project codes
 
-Codes let us discuss work across category lines without re-litigating
-taxonomy. All labels below describe **framework scope, not implementation
-status**. Intersections are shared responsibilities: pick a canonical
-owning location and reference it rather than duplicating folders.
-
 | Code | Categories | Description |
 |------|-----------|-------------|
-| **FF** | all four | The framework and its physical calibration reference; shared spatial language across all four categories |
+| **FF** | CBE+TD+APP+SODI | The framework and its physical calibration reference; shared spatial language across all four categories |
 | **Shell>_** | CBE+TD | Shell / command interface overseeing devices, calibrations, and workflows |
 | **RAI** | CBE | Remote AI: ComfyUI / LLMs on demand |
 | **LAI** | CBE | Local AI: MCPs, callbacks, and CLI |
@@ -69,7 +63,7 @@ owning location and reference it rather than duplicating folders.
 | **XRBG** | SODI+APP | XR Board Games |
 
 
-## Repository layout (what exists today)
+## Repository layout
 
 ```
 ff
@@ -85,9 +79,9 @@ ff
 │   └── shell/
 ├── SODI/                      
 └── TD/
-|    └── connected_aligned.toe  # main TouchDesigner project (connecting inputs, TDCP v1, tracking ff v1, animations)
+|   └── connected_aligned.toe  # main TouchDesigner project (connecting inputs, TDCP v1, tracking ff v1, animations)
 └── docs/                      
-|    └── shared_projective_xr.pdf  # main document
+    └── shared_projective_xr.pdf  # main document
 ```
 ## Evidence vs. plan
 
