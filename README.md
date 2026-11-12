@@ -23,7 +23,7 @@ the overview. These elements are just a creative organizational metaphor.
 | Category | Element | Glyph | Role |
 |----------|---------|-------|------|
 | **SODI** | EARTH | 🟩 | Smart Objects / Dumb Interfaces — physical objects, embodied interfaces|
-| **TD** |  LIGHT | 🟨 | TouchDesigner — projective mapping, animations, and show rendering |
+| **TD** |  LIGHT | 🟨 | TouchDesigner — projective mapping, animations, and sound production |
 | **CBE** | WATER | 🟦 | Compute Backend — calibration, CV, tracking, services |
 | **APP** | FIRE | 🟥 | Applications — experiences, demos, artworks |
 
@@ -31,7 +31,7 @@ Reading the diagram:
 
 - A **diagonally split square** means an **intersection of categories**.
 
-- **Arrows** mean connection/enclosure.
+- **Arrows** mean enablier/enclosure.
 
 - The **FF itself sits at the center and touches all four categories**:
   it is a physical artifact (SODI), a measured geometry, digital twin of itself (CBE), a bunch of photons projected on top of it (TD), and it is an interactive artifact (APP)/(DEMO).
@@ -43,7 +43,9 @@ Reading the diagram:
 | **FF** | CBE+TD+APP+SODI | The framework and its physical calibration reference. The framework includes a shared spatial language, neccessary algebra and guidelines for creating and documenting FFs. |
 | **HW** | CBE+SODI | Hardware category |
 | **SODI**| SODI/DOSI| Smart objects - dumb interfaces. Or dumb objects smart interfaces. Old idea of using regular non-instrumented objects as inputs for digital systems. Revibrates with MyoKey - holding a beer can and controlling smart glasses. Final delivaerable - Roman Tetrahedron (RTTH) - LED and wire-instrumented (yes) 3d-drawn tetrahedron.   
-| **Shell>_** | CBE+TD | Shell / command interface (cli) for status checking, overseeing devices, calibrations, and workflows. |
+|**CBE**| CBE | Anything related to compute.
+|**TD**| TD | Touch designer projects, integration scripts, the bridge.
+| **SHELL** | CBE+TD | Shell / command interface (cli) for status checking, overseeing devices, calibrations, and workflows. |
 | **RAI** | CBE | Remote AI: ComfyUI / LLMs on demand. |
 | **LAI** | CBE | Local AI: MCPs, callbacks, and CLI bridges. |
 | **API** | CBE | Integration and device orchestration scripts. Should be self-sufficient and not rely on agents. Examples are: blender 3D-sculpture -embedding scripts, touch designer reset-to-default shell scripts |
