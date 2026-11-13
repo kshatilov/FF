@@ -3,7 +3,7 @@
 `hg` produces planar correspondences between the project's logical
 devices and writes them as self-describing JSON artifacts. It is a
 local tool - there is no installer and nothing to add to PATH. All math
-and diagnostics come from `tools/hg_geometry.py`.
+and diagnostics come from `tools/hg/hg_geometry.py`.
 
 All live frames arrive through **TouchDesigner**: camera reads come
 from existing TOP nodes, depth comes from the hg-owned
@@ -20,11 +20,11 @@ window, and no ADB traffic.
 ```
 
 From PowerShell use `.\hg` (the repo-root `hg.cmd` wrapper); it calls
-`C:\Python314\python.exe tools\hg.py` unless `HG_PYTHON` is set.
+`C:\Python314\python.exe tools\hg\hg.py` unless `HG_PYTHON` is set.
 Equivalent direct form:
 
 ```
-C:\Python314\python.exe tools\hg.py --list
+C:\Python314\python.exe tools\hg\hg.py --list
 ```
 
 ## Logical devices
@@ -47,6 +47,14 @@ rasters for that reason).
 
 Set the projector to the HDMI input and keep focus, keystone, zoom and
 any auto-correction fixed; recalibrate after any of these change.
+
+The projected pattern is a black-backed ArUco grid: each marker sits on
+an eight-module white tile with a black gap (one-module quiet zone
+around the code, black between tiles). Larger marker sides than the old
+white grid, e.g. 156 px at 1280x720. Detection still needs the camera to
+see the markers unclipped - a brighter projection or higher camera
+exposure cannot fix a saturated/ambient-lit surface; adjust framing,
+occlusion, and ambient light instead.
 
 ## One-time setup (`--setup-td`)
 
@@ -100,44 +108,79 @@ retries for 10 s after a 2 s settle; Ctrl+C cancels and still restores.
 At least 4 marker IDs (16 corners) must be detected. The first frame
 meeting the marker count wins.
 
-Default output is `out/hg/c0_p0.json` / `out/hg/c1_p0.json`. Override
-with `-o`, label the measured plane with `--plane`:
+Default P export is `tools/pipe/p0/<surface>/c<id>/P.json`, beside the
+canonical profile. Override with `-o` (the export only - the canonical
+profile path is always the pipe store), label the measured plane with
+`--plane`:
 
 ```
 .\hg -c 0 -p 0 --plane lab_wall -o out\hg\desk_run1.json
 ```
 
+## Named surfaces and the shared profile store
+
+Every camera/surface pair gets a shared profile at
+
+    tools/pipe/p0/<surface_id>/c<camera_id>/profile.json
+
+(`ff.projective.profile` v1: P homography doc + optional accepted TC
+model, geometry hash, per-publish revision archive under
+`revisions/`). `-s_id` / `--surface-id` / `--surface` names the
+surface (default `Table_01`; ASCII ids, no traversal/reserved names,
+case-insensitive). A new geometry publish archives the old profile and
+invalidates its photometric model - stale gains are never reused on a
+new H. `hg --list` / `cc --list` enumerate profiles.
+
+`hg --init-profile <H.json> -c 0 -p 0 -s_id Table_01` publishes a
+legacy homography artifact into the store with no TD contact
+(idempotent on identical geometry hash) - the migration entry point
+before `cc --load`.
+
+`hg --migrate-pipe` moves the pre-pipe `out/calibration/p0` tree into
+`tools/pipe/p0` byte-exact (revisions included); the legacy tree stays
+as a read-only backup and files that differ at the destination are
+refused, never overwritten. See `tools/pipe/README.md`.
+
 ## Projected camera view (`--warp`)
 
-After calibrating, route the raw camera through a GLSL inverse-UV pull
-so the projector draws the camera's view of the measured plane:
+`--warp` is now profile activation, not a direct rewire:
 
 ```
-.\hg --warp -c 0 -p 0            # uses out\hg\c0_p0.json
+.\hg --warp -c 0 -p 0 -s_id Table_01
 .\hg --warp -c 1 -p 0 --calibration out\hg\c1_p0.json
 ```
 
-Route: `/project1/camLogi -> hg_warp (GLSL) -> OART -> hg ->
-final_switch[7]` (index is pinned to 7 while the warp is active).
-The shader (`tools/td/hg_warp.frag`) samples the raw camera raster at
-`H_destination_uv_to_source_uv` and outputs black outside the mapped
-region. All of it runs on the GPU every frame - no per-frame CPU work.
-A later recalibration of the same pair reloads the coefficients
-automatically without touching routing or selection.
+It registers the shared profile bundle in the TD registry and
+activates it: `cam_and_kinect` (the user's sole camera selector,
+inputs camLogi/kinectC/kinectD) is set to the camera, the owned chain
+`cam_and_kinect -> hg_warp -> hg_table_color -> hg_output -> OART ->
+hg -> final_switch[7]` is configured, and the `hg_output` gate opens
+only when the stored ready pair matches the *current*
+selector/surface - a new source can never appear with old uniforms.
+A profile without accepted color correction gates **black** with a
+status hint instead of silently applying geometry-only compensation.
+`hg_pair_controls` (Surfaceid, read-only Status/Activecamera/Revision)
+and the `hg_profiles` table DAT expose state; a frame watcher
+re-syncs on user selector/surface changes, suppresses during
+calibration sessions, and blacks out depth (c2) and unknown pairs.
 
-`transformCam2` sits BEFORE OART and was bypassed during calibration
-(the pattern was injected directly into OART and the camera read was
-raw `camLogi`). The warp therefore consumes the raw raster too - a
-physical upside-down camera is already absorbed into H, so do NOT add
-a 180-degree rotation after the warp; that would double the flip and
-break alignment. `transformCam2` itself is left fully intact (all
-parameters, its own input) - only OART's input is replaced.
+`transformCam2` (pre-OART, bypassed by calibration) and all other
+user nodes stay untouched. The warp input is the shared selector, and
+the camera raster checked is the *selected* source - no resize,
+mirror, or crop is implied or applied.
 
 Limits: the warp is the same single-plane, raw-distorted-pixel planar
 approximation as the calibration - off-plane geometry will not line
 up. Re-projecting the framebuffer's RGB can produce feedback
-brightening / hall-of-mirrors; this is a geometric mapping, not
-reflectance capture or photometric cancellation.
+brightening; this is a geometric mapping, not reflectance capture or
+photometric cancellation.
+
+## Table color (`--table-color`)
+
+Compat alias for `cc --load`: binds a reviewed `ff.hg.table_color`
+model to the shared profile and registers it in TD. All photometric
+measurement/model code lives under `tools/cc/` - see
+`tools/cc/README.md`. `hg` contains no color math.
 
 ## Offline correspondence mode (`--points`)
 
@@ -174,8 +217,8 @@ mapper handle is opened locally - no stream readers, and TD is never
 restarted or saved.
 
 ```
-.\hg -c 1 -c 2 --map      # color -> depth  (out/hg/c1_c2.json)
-.\hg -c 2 -c 1 --map      # depth -> color  (out/hg/c2_c1.json)
+.\hg -c 1 -c 2 --map      # color -> depth  (tools/pipe/maps/c1_c2.json)
+.\hg -c 2 -c 1 --map      # depth -> color  (tools/pipe/maps/c2_c1.json)
 ```
 
 Emitted coordinates are **native SDK** spaces (color 1920x1080, depth
@@ -198,7 +241,8 @@ color calibration:
 
 ```
 .\hg -c 1 -p 0                        # first: live c1 -> p0 homography
-.\hg -c 2 -p 0 --via out\hg\c1_p0.json   # -> out/hg/c2_p0.json
+.\hg -c 2 -p 0 --via tools\pipe\p0\Table_01\c1\P.json
+                                        # -> tools/pipe/maps/c2_p0.json
 ```
 
 Without `--via` the command fails with instructions. The via artifact

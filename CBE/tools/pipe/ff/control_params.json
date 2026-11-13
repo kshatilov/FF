@@ -1,0 +1,1 @@
+{"still_scale": 0.22, "move_scale": 1.5, "speed_ref": 50.0, "hold_enabled": 1.0, "hold_seconds": 1.5, "hold_fade_seconds": 0.75, "position_noise": 3.0, "rotation_noise": 0.02, "acceleration_noise": 100.0, "angular_acceleration_noise": 1.5, "gate": 60.0, "reacquire_after": 0.25}

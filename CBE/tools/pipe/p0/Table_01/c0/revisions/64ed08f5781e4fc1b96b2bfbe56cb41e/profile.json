@@ -1,0 +1,406 @@
+{
+  "schema": "ff.projective.profile",
+  "schema_version": 1,
+  "camera_id": 0,
+  "projector_id": 0,
+  "surface_id": "Table_01",
+  "revision": "64ed08f5781e4fc1b96b2bfbe56cb41e",
+  "geometry_revision": "0af6ba9b305b4bb3b38a9642250c237a",
+  "photometric_revision": "79b8d9f133934b88a5b08da89b9129de",
+  "geometry_sha256": "16052185b97de9949e5e6bee67d451a3ec1252e39dab9520f87cb9716998ceb5",
+  "P": {
+    "schema": "ff.hg",
+    "schema_version": 1,
+    "kind": "homography",
+    "created_utc": "2026-11-12T10:19:54+00:00",
+    "source": {
+      "id": "0",
+      "name": "webcam via TD /project1/camLogi",
+      "type": "camera",
+      "resolution": [
+        640,
+        480
+      ],
+      "capture_backend": "touchdesigner",
+      "top_path": "/project1/camLogi"
+    },
+    "destination": {
+      "id": "P0",
+      "name": "Fengmi M055MGN projector",
+      "type": "projector",
+      "resolution": [
+        1280,
+        720
+      ],
+      "adb": "192.168.0.170:5555",
+      "adb_note": "address recorded only; hg makes no ADB calls",
+      "image_path": "TD branch /project1/OART -> /project1/hg -> final_switch input 7 (HDMI)",
+      "td_branch": {
+        "pattern_top": "/project1/hg_pattern",
+        "oart": "/project1/OART",
+        "hg": "/project1/hg",
+        "switch": "/project1/final_switch",
+        "switch_input": 7,
+        "raster_source": "TD output raster, not an assumed HDMI mode"
+      }
+    },
+    "coordinate_convention": {
+      "origin": "top-left",
+      "x": "right",
+      "y": "down",
+      "pixels": "integer pixel centres",
+      "vectors": "column vectors",
+      "uv": "bottom-left origin, half-pixel centre convention (see tools/hg_geometry.py uv_to_pixel)"
+    },
+    "source_space": "raw_distorted_pixels",
+    "lens_policy": "planar_approximation_no_distortion_correction",
+    "validity": "fixed plane and fixed device configuration only; no lens distortion correction applied",
+    "H_source_to_destination": [
+      [
+        -0.0015026215749233745,
+        -6.52878955399126e-05,
+        0.8728800234071737
+      ],
+      [
+        5.0866744118776536e-05,
+        -0.001475498204626056,
+        0.4879299671581132
+      ],
+      [
+        3.0636912119123573e-10,
+        -2.8213049013092635e-10,
+        0.0006083332064039345
+      ]
+    ],
+    "H_destination_to_source": [
+      [
+        -664.3249175567639,
+        29.21728714132764,
+        929786.429011779
+      ],
+      [
+        -22.794984206442557,
+        -676.838609658014,
+        575584.4383365209
+      ],
+      [
+        0.00032399592696201164,
+        -0.0003286160958550262,
+        1643.6346422368847
+      ]
+    ],
+    "H_source_uv_to_destination_uv": [
+      [
+        -0.000751310710869407,
+        2.4483013726934126e-05,
+        0.0006583045993508375
+      ],
+      [
+        -4.5018943587626174e-05,
+        -0.0009835301411589379,
+        0.0009127710444914608
+      ],
+      [
+        1.9607623756239086e-07,
+        1.3542263526284465e-07,
+        0.0006081977716493562
+      ]
+    ],
+    "H_destination_uv_to_source_uv": [
+      [
+        -1328.649511117601,
+        -32.86926318743968,
+        1487.4408259206589
+      ],
+      [
+        61.20090734245557,
+        -1015.021557360077,
+        1457.0810509576158
+      ],
+      [
+        0.4147147865113749,
+        0.23660358901561887,
+        1643.3980409579535
+      ]
+    ],
+    "plane": "unspecified_flat_surface",
+    "diagnostics": {
+      "point_count": 44,
+      "inlier_count": 43,
+      "inlier_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ransac_threshold_destination_px": 3.0,
+      "inlier_mean_destination_px": 1.4717744707009297,
+      "inlier_max_destination_px": 2.4409315787023127,
+      "independent_validation": false
+    },
+    "warnings": [
+      "camera feed is the TD node raster; TD-side crops/flips/resizes would change this space",
+      "no independent validation performed"
+    ]
+  },
+  "TC": {
+    "schema": "ff.hg.table_color",
+    "schema_version": 1,
+    "method": "global_attenuation_gray_balance",
+    "reference": "camera_relative_neutral_rgb",
+    "source_id": "0",
+    "source_top": "/project1/camLogi",
+    "source_size": [
+      640,
+      480
+    ],
+    "destination_size": [
+      1280,
+      720
+    ],
+    "calibration_sha256": "16052185b97de9949e5e6bee67d451a3ec1252e39dab9520f87cb9716998ceb5",
+    "measurement_directory": "C:\\dev\\ProjectSynchronicity\\out\\hg\\table_color_fit_20261112_01",
+    "gain_rgb": [
+      1.0,
+      0.78125,
+      0.875
+    ],
+    "headroom": 0.6274509803921569,
+    "reference_drive": 128,
+    "balanced_drive_rgb": [
+      128.0,
+      100.0,
+      112.0
+    ],
+    "balanced_camera_rgb": [
+      128.28545041991228,
+      129.92404222643444,
+      132.7185826749865
+    ],
+    "jacobian_camera_codes_per_projector_code": [
+      [
+        0.3446735303070139,
+        0.5932358106659095,
+        -0.00969523067504241
+      ],
+      [
+        -0.02810191894839716,
+        0.9616238063860797,
+        0.18630980896412433
+      ],
+      [
+        -0.08140779858507348,
+        0.7655703779671725,
+        0.4419187278917687
+      ]
+    ],
+    "jacobian_condition": 8.960580403020712,
+    "repeat_reference_drift_rgb": [
+      8.09160244614472,
+      -3.045685349419557,
+      -8.929929299777257
+    ],
+    "ambient_start_rgb": [
+      94.76352435767949,
+      95.49233504434329,
+      91.13680700637825
+    ],
+    "ambient_end_rgb": [
+      94.97055944491332,
+      95.50058109772127,
+      92.12762531649072
+    ],
+    "validation": [
+      {
+        "nominal": 64,
+        "uncorrected_drive_rgb": [
+          40.0,
+          40.0,
+          40.0
+        ],
+        "corrected_drive_rgb": [
+          40.0,
+          31.0,
+          35.0
+        ],
+        "before_camera_rgb": [
+          95.38442381393804,
+          96.34812595984891,
+          93.21144001549595
+        ],
+        "after_camera_rgb": [
+          94.59171831979745,
+          95.86510058524843,
+          92.30152053903731
+        ],
+        "before_channel_spread": 3.136685944352962,
+        "after_channel_spread": 3.563580046211115
+      },
+      {
+        "nominal": 128,
+        "uncorrected_drive_rgb": [
+          80.0,
+          80.0,
+          80.0
+        ],
+        "corrected_drive_rgb": [
+          80.0,
+          62.0,
+          70.0
+        ],
+        "before_camera_rgb": [
+          102.06610505416661,
+          115.9910120093529,
+          119.11337285720215
+        ],
+        "after_camera_rgb": [
+          102.45047006654953,
+          103.84016180804406,
+          105.57657864880944
+        ],
+        "before_channel_spread": 17.04726780303554,
+        "after_channel_spread": 3.126108582259917
+      },
+      {
+        "nominal": 192,
+        "uncorrected_drive_rgb": [
+          120.0,
+          120.0,
+          120.0
+        ],
+        "corrected_drive_rgb": [
+          120.0,
+          94.0,
+          105.0
+        ],
+        "before_camera_rgb": [
+          137.81057079015454,
+          153.93716362051552,
+          160.48456113286386
+        ],
+        "after_camera_rgb": [
+          123.71393908158889,
+          127.14120847572534,
+          131.60066999183698
+        ],
+        "before_channel_spread": 22.673990342709317,
+        "after_channel_spread": 7.88673091024809
+      },
+      {
+        "nominal": 255,
+        "uncorrected_drive_rgb": [
+          160.0,
+          160.0,
+          160.0
+        ],
+        "corrected_drive_rgb": [
+          160.0,
+          125.0,
+          140.0
+        ],
+        "before_camera_rgb": [
+          176.64790493517992,
+          193.55805961785907,
+          195.0243490321956
+        ],
+        "after_camera_rgb": [
+          157.10483452550605,
+          160.1557878024821,
+          166.24323263278774
+        ],
+        "before_channel_spread": 18.37644409701568,
+        "after_channel_spread": 9.138398107281688
+      }
+    ],
+    "limitations": [
+      "Global correction of combined table/projector/camera color cast.",
+      "Not isolated surface reflectance or colorimetric calibration.",
+      "No spatial compensation, ambient subtraction or optical feedback cancellation.",
+      "Fixed exposure, white balance, geometry and ambient light required.",
+      "Gains and headroom only attenuate; projector black remains black.",
+      "Saturated highlights excluded; full white maps to measured gray-160 headroom."
+    ],
+    "accepted": true,
+    "acceptance": {
+      "decision": "Accepted for global camera-relative table white balance under current conditions.",
+      "validation": "Three mid/bright levels improve; lowest level changes by less than one camera code. No validation ROI clipping above 1%.",
+      "ambient_drift_max_codes": 0.9908183101124735,
+      "white_balance_lock_verified": false,
+      "repeat_reference_drift_warning": "Reference gray drifted by up to 8.93 camera codes during fitting. This limits transferability; fixed exposure alone does not prove fixed white balance.",
+      "not_claimed": [
+        "isolated table reflectance",
+        "absolute color accuracy",
+        "optical feedback cancellation"
+      ]
+    },
+    "measurement_record_count": 21,
+    "frozen_validation_summary": [
+      {
+        "nominal": 64,
+        "before_spread": 3.14,
+        "after_spread": 3.56
+      },
+      {
+        "nominal": 128,
+        "before_spread": 17.05,
+        "after_spread": 3.13
+      },
+      {
+        "nominal": 192,
+        "before_spread": 22.67,
+        "after_spread": 7.89
+      },
+      {
+        "nominal": 255,
+        "before_spread": 18.38,
+        "after_spread": 9.14
+      }
+    ],
+    "destination_id": "P0",
+    "surface_id": "Table_01",
+    "migration": {
+      "legacy_model_attached_to": "c0/Table_01/p0",
+      "provenance": "C:\\dev\\ProjectSynchronicity\\out\\hg\\c0_p0_table_color.json"
+    }
+  }
+}

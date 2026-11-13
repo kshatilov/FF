@@ -1,0 +1,3768 @@
+{
+  "timestamp": "ff_20261110_195636",
+  "units": "mm",
+  "frame": "origin = base centre, +z up. Side faces: id11=+y, id12=+x, id13=-y, id14=-x, id10=top. Marker corners in TL,TR,BR,BL order (matches cv2.aruco).",
+  "intrinsics_source": "ff-marker-refined webcam K; frozen projector prior; projector f/cy refined with soft priors and held-out selection",
+  "alignment_nodes_modified": true,
+  "webcam": {
+    "K": [
+      [
+        526.9667152402842,
+        0.0,
+        319.5552126237694
+      ],
+      [
+        0.0,
+        526.9667152402842,
+        237.50341277547915
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rvec": [
+      -0.21424552535574332,
+      3.1137948245490135,
+      -0.29914859226016793
+    ],
+    "tvec": [
+      128.4923980037015,
+      -72.70638106228321,
+      622.4839674255055
+    ],
+    "markers": [
+      10,
+      11,
+      12,
+      14
+    ],
+    "mean_px": 1.035027051806594,
+    "max_px": 2.1052309119254278
+  },
+  "marker_drift_cam_px": 1.021604299545288,
+  "marker_drift_worst_px": 1.944904088973999,
+  "accepted_face_dots_pass1": 56,
+  "marker_drift_cam_px_pass2": 0.44468608498573303,
+  "marker_drift_worst_px_pass2": 2.3115341663360596,
+  "accepted_face_dots_pass2": 55,
+  "dot_survey": [
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        398,
+        365
+      ],
+      "expected_cam_px": [
+        410.6845336655416,
+        197.5067010261414
+      ],
+      "camera_px": [
+        411.7823886639676,
+        198.3917004048583
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.7,
+      "margin_mm": 5.7,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        289,
+        354
+      ],
+      "expected_cam_px": [
+        454.6754241678474,
+        203.52853660484493
+      ],
+      "camera_px": [
+        453.02659574468083,
+        204.17021276595744
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.9,
+      "margin_mm": 5.8,
+      "area": 6,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        313,
+        257
+      ],
+      "expected_cam_px": [
+        443.8332121109614,
+        239.11778506392554
+      ],
+      "camera_px": [
+        445.17353787152445,
+        239.9333652924257
+      ],
+      "measured_face": "+y",
+      "distance_mm": 2.0,
+      "margin_mm": 4.2,
+      "area": 14
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        417,
+        267
+      ],
+      "expected_cam_px": [
+        401.9107472545169,
+        233.35844096483783
+      ],
+      "camera_px": [
+        401.4058212058212,
+        233.9975051975052
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.1,
+      "margin_mm": 4.1,
+      "area": 16
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        321,
+        332
+      ],
+      "expected_cam_px": [
+        441.4155889516504,
+        211.02483222280392
+      ],
+      "camera_px": [
+        441.4208615682478,
+        211.236931268151
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.3,
+      "margin_mm": 16.8,
+      "area": 29,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        325,
+        315
+      ],
+      "expected_cam_px": [
+        439.6101613568155,
+        217.2496469794445
+      ],
+      "camera_px": [
+        439.511724742494,
+        217.4795090948937
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.3,
+      "margin_mm": 25.1,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        384,
+        304
+      ],
+      "expected_cam_px": [
+        415.79579528723843,
+        220.34883251896724
+      ],
+      "camera_px": [
+        415.5122249388753,
+        220.66283618581906
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.5,
+      "margin_mm": 24.7,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        347,
+        301
+      ],
+      "expected_cam_px": [
+        430.48676991125467,
+        222.36417816246671
+      ],
+      "camera_px": [
+        430.58278647147904,
+        222.40989399293287
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.1,
+      "margin_mm": 25.2,
+      "area": 27,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        369,
+        286
+      ],
+      "expected_cam_px": [
+        421.51385287341657,
+        227.39435408624826
+      ],
+      "camera_px": [
+        421.49826268241833,
+        227.64883020616168
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 16.5,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        351,
+        284
+      ],
+      "expected_cam_px": [
+        428.80002395612865,
+        228.39449610714934
+      ],
+      "camera_px": [
+        428.9722157906923,
+        228.5121555915721
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.3,
+      "margin_mm": 16.7,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        333,
+        282
+      ],
+      "expected_cam_px": [
+        436.08760642304503,
+        229.3948318628165
+      ],
+      "camera_px": [
+        436.23210070810387,
+        229.67558353002886
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 16.5,
+      "area": 26,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        244,
+        299
+      ],
+      "expected_cam_px": [
+        472.42389506546135,
+        225.0857368625189
+      ],
+      "camera_px": [
+        472.3988913980702,
+        224.5222746869226
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.8,
+      "margin_mm": 5.5,
+      "area": 33,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        466,
+        320
+      ],
+      "expected_cam_px": [
+        382.8590544817112,
+        212.80260831487203
+      ],
+      "camera_px": [
+        382.61041666666665,
+        213.00462962962962
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 5.7,
+      "area": 31,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        343,
+        362
+      ],
+      "expected_cam_px": [
+        432.93799373732867,
+        199.5529260655643
+      ],
+      "camera_px": [
+        432.28979300499645,
+        200.6302640970735
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.5,
+      "margin_mm": 5.0,
+      "area": 8
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        366,
+        259
+      ],
+      "expected_cam_px": [
+        422.55558854376966,
+        237.3668103623558
+      ],
+      "camera_px": [
+        422.42991491267355,
+        238.44469323779668
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.5,
+      "margin_mm": 2.0,
+      "area": 15
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        425,
+        503
+      ],
+      "expected_cam_px": [
+        401.98846862269136,
+        139.78818148611893
+      ],
+      "camera_px": [
+        401.81632653061223,
+        140.25255102040816
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 4.9,
+      "area": 5
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        432,
+        403
+      ],
+      "expected_cam_px": [
+        397.3417059730733,
+        181.10015835424863
+      ],
+      "camera_px": [
+        397.0139318885449,
+        181.1486068111455
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 5.2,
+      "area": 9,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        515,
+        378
+      ],
+      "expected_cam_px": [
+        364.11659609307185,
+        186.14317153532875
+      ],
+      "camera_px": [
+        364.2505376344086,
+        186.58736559139786
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.6,
+      "margin_mm": 5.4,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        507,
+        473
+      ],
+      "expected_cam_px": [
+        368.9938874256037,
+        147.06784162774073
+      ],
+      "camera_px": [
+        368.48197424892703,
+        145.9412017167382
+      ],
+      "measured_face": "+x",
+      "distance_mm": 1.9,
+      "margin_mm": 4.1,
+      "area": 18
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        462,
+        467
+      ],
+      "expected_cam_px": [
+        386.724704046888,
+        152.56812759614172
+      ],
+      "camera_px": [
+        386.6726636681659,
+        152.3638180909545
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.3,
+      "margin_mm": 24.9,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        464,
+        450
+      ],
+      "expected_cam_px": [
+        385.9124373359953,
+        159.46516655578395
+      ],
+      "camera_px": [
+        385.6475368207212,
+        159.36769933976638
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 25.2,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        465,
+        433
+      ],
+      "expected_cam_px": [
+        385.09587194406555,
+        166.39870605175247
+      ],
+      "camera_px": [
+        384.92475524475526,
+        166.40447552447552
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.3,
+      "margin_mm": 25.1,
+      "area": 27,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        476,
+        462
+      ],
+      "expected_cam_px": [
+        381.050511875063,
+        153.72707832246743
+      ],
+      "camera_px": [
+        381.3669191919192,
+        153.63434343434344
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 25.7,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        479,
+        429
+      ],
+      "expected_cam_px": [
+        379.40811989743275,
+        167.42641985546334
+      ],
+      "camera_px": [
+        379.5246411483254,
+        167.17655502392344
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.3,
+      "margin_mm": 25.3,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        480,
+        412
+      ],
+      "expected_cam_px": [
+        378.58045276985877,
+        174.33006698154657
+      ],
+      "camera_px": [
+        378.6453473789817,
+        174.3604213694507
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.1,
+      "margin_mm": 25.3,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        492,
+        440
+      ],
+      "expected_cam_px": [
+        374.6618891223414,
+        161.631088436114
+      ],
+      "camera_px": [
+        374.35754912099276,
+        161.62125129265772
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 16.4,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        493,
+        424
+      ],
+      "expected_cam_px": [
+        373.8321932062408,
+        168.43392805589733
+      ],
+      "camera_px": [
+        373.62531839021904,
+        168.3458991339786
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 16.5,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        494,
+        407
+      ],
+      "expected_cam_px": [
+        372.9981815033999,
+        175.27215365801175
+      ],
+      "camera_px": [
+        373.1043184183143,
+        175.49531737773154
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 17.1,
+      "area": 29,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        480,
+        336
+      ],
+      "expected_cam_px": [
+        377.4629711266244,
+        206.0539784947546
+      ],
+      "camera_px": [
+        377.29340277777777,
+        206.17469618055554
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.3,
+      "margin_mm": 5.7,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        464,
+        539
+      ],
+      "expected_cam_px": [
+        387.42543794074345,
+        122.25216090146542
+      ],
+      "camera_px": [
+        387.4585321517837,
+        121.88184503521927
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 5.3,
+      "area": 33,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        427,
+        454
+      ],
+      "expected_cam_px": [
+        400.58605918401906,
+        160.113282114499
+      ],
+      "camera_px": [
+        400.0,
+        159.9271445358402
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.9,
+      "margin_mm": 4.4,
+      "area": 5
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        514,
+        425
+      ],
+      "expected_cam_px": [
+        365.5373391568562,
+        166.65437192064184
+      ],
+      "camera_px": [
+        365.11618862421,
+        166.7068546426835
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.7,
+      "margin_mm": 2.8,
+      "area": 16
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        280,
+        523
+      ],
+      "expected_cam_px": [
+        460.94940777562493,
+        133.82851657852547
+      ],
+      "camera_px": [
+        461.138714185884,
+        134.10656883298392
+      ],
+      "measured_face": "-y",
+      "distance_mm": 0.8,
+      "margin_mm": 3.9,
+      "area": 24
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        387,
+        533
+      ],
+      "expected_cam_px": [
+        418.10510430559134,
+        128.00379507659642
+      ],
+      "camera_px": [
+        417.5185788787484,
+        128.22392438070403
+      ],
+      "measured_face": "-y",
+      "distance_mm": 1.2,
+      "margin_mm": 3.8,
+      "area": 26
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        398,
+        557
+      ],
+      "expected_cam_px": [
+        414.90125772465166,
+        113.74285695399172
+      ],
+      "camera_px": [
+        414.4858860428646,
+        115.17694720334553
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.6,
+      "margin_mm": 10.7,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        298,
+        548
+      ],
+      "expected_cam_px": [
+        454.96838441757575,
+        119.18265539323974
+      ],
+      "camera_px": [
+        452.6790697674419,
+        122.69302325581396
+      ],
+      "measured_face": "-y",
+      "distance_mm": 14.8,
+      "margin_mm": 19.2,
+      "area": 3,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        346,
+        535
+      ],
+      "expected_cam_px": [
+        434.73151667602684,
+        126.74110665648263
+      ],
+      "camera_px": [
+        434.99672560576295,
+        125.16895874263261
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.6,
+      "margin_mm": 22.0,
+      "area": 13,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        313,
+        536
+      ],
+      "expected_cam_px": [
+        448.2805867711264,
+        126.1530027729122
+      ],
+      "camera_px": [
+        448.3950177935943,
+        123.80960854092527
+      ],
+      "measured_face": "-y",
+      "distance_mm": 8.4,
+      "margin_mm": 25.2,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        349,
+        539
+      ],
+      "expected_cam_px": [
+        433.96688834753456,
+        124.20817482153046
+      ],
+      "camera_px": [
+        434.284134410889,
+        124.06380263717567
+      ],
+      "measured_face": "-y",
+      "distance_mm": 0.8,
+      "margin_mm": 25.5,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        319,
+        544
+      ],
+      "expected_cam_px": [
+        446.47923839068284,
+        121.2140520206736
+      ],
+      "camera_px": [
+        447.4875,
+        122.99305555555556
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.9,
+      "margin_mm": 22.8,
+      "area": 6,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        336,
+        546
+      ],
+      "expected_cam_px": [
+        439.4837161762785,
+        120.26399416116702
+      ],
+      "camera_px": [
+        437.8928850664582,
+        122.61532447224394
+      ],
+      "measured_face": "-y",
+      "distance_mm": 9.7,
+      "margin_mm": 26.1,
+      "area": 11,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        353,
+        548
+      ],
+      "expected_cam_px": [
+        432.48949431195757,
+        119.31411290145937
+      ],
+      "camera_px": [
+        433.26513317191285,
+        121.34322033898304
+      ],
+      "measured_face": "-y",
+      "distance_mm": 6.9,
+      "margin_mm": 23.8,
+      "area": 14,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        371,
+        549
+      ],
+      "expected_cam_px": [
+        425.49657243518396,
+        118.36440819231493
+      ],
+      "camera_px": [
+        425.36624203821657,
+        119.42038216560509
+      ],
+      "measured_face": "-y",
+      "distance_mm": 3.9,
+      "margin_mm": 20.7,
+      "area": 24,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        448,
+        551
+      ],
+      "expected_cam_px": [
+        393.964432145484,
+        117.5289438726346
+      ],
+      "camera_px": [
+        393.9689664727071,
+        117.68440011083402
+      ],
+      "measured_face": "-y",
+      "distance_mm": 0.5,
+      "margin_mm": 5.4,
+      "area": 29,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        234,
+        530
+      ],
+      "expected_cam_px": [
+        480.346747574381,
+        129.26443559590925
+      ],
+      "camera_px": [
+        479.75961538461536,
+        130.15357142857144
+      ],
+      "measured_face": "-y",
+      "distance_mm": 3.6,
+      "margin_mm": 4.8,
+      "area": 34
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        333,
+        527
+      ],
+      "expected_cam_px": [
+        439.6472541623087,
+        131.31350709010195
+      ],
+      "camera_px": [
+        439.53156290814104,
+        132.07705703090988
+      ],
+      "measured_face": "-y",
+      "distance_mm": 2.6,
+      "margin_mm": 1.0,
+      "area": 19
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        348,
+        553
+      ],
+      "expected_cam_px": [
+        434.7865554681149,
+        116.01514221412542
+      ],
+      "camera_px": [
+        439.53156290814104,
+        132.07705703090988
+      ],
+      "measured_face": "-y",
+      "distance_mm": 53.9,
+      "margin_mm": 1.0,
+      "area": 19
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        250,
+        385
+      ],
+      "expected_cam_px": [
+        470.8734466955167,
+        191.15153454757674
+      ],
+      "camera_px": [
+        469.8294983025273,
+        191.26367408525084
+      ],
+      "measured_face": "-x",
+      "distance_mm": 2.5,
+      "margin_mm": 2.4,
+      "area": 21
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        246,
+        486
+      ],
+      "expected_cam_px": [
+        474.3737509205149,
+        149.64247498564998
+      ],
+      "camera_px": [
+        473.8460551635664,
+        149.17318794098782
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.3,
+      "margin_mm": 3.4,
+      "area": 26
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        200,
+        443
+      ],
+      "expected_cam_px": [
+        493.10021432249727,
+        163.98269874986917
+      ],
+      "camera_px": [
+        493.9169006176305,
+        163.06120157215048
+      ],
+      "measured_face": "-x",
+      "distance_mm": 2.7,
+      "margin_mm": 3.2,
+      "area": 15
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        203,
+        348
+      ],
+      "expected_cam_px": [
+        490.0774165506639,
+        203.37736767403635
+      ],
+      "camera_px": [
+        489.92578496669836,
+        202.98572787821124
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.6,
+      "margin_mm": 5.6,
+      "area": 24,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        236,
+        434
+      ],
+      "expected_cam_px": [
+        477.7235724036087,
+        170.08206481094692
+      ],
+      "camera_px": [
+        478.1995381062356,
+        169.9445727482679
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.2,
+      "margin_mm": 17.6,
+      "area": 17,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        228,
+        410
+      ],
+      "expected_cam_px": [
+        480.4714124421262,
+        179.41948426757472
+      ],
+      "camera_px": [
+        481.0320933625091,
+        179.39350838803793
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.4,
+      "margin_mm": 26.2,
+      "area": 22,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        221,
+        387
+      ],
+      "expected_cam_px": [
+        483.1796527927591,
+        188.6223402521852
+      ],
+      "camera_px": [
+        483.53640869233703,
+        188.24437666793747
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.1,
+      "margin_mm": 24.4,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        220,
+        420
+      ],
+      "expected_cam_px": [
+        484.28555743185655,
+        174.7572733391246
+      ],
+      "camera_px": [
+        483.7716973065413,
+        174.7297990594271
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.3,
+      "margin_mm": 26.5,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        219,
+        437
+      ],
+      "expected_cam_px": [
+        484.8341805111994,
+        167.8790168998113
+      ],
+      "camera_px": [
+        485.233523189585,
+        167.29048006509356
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.3,
+      "margin_mm": 24.3,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        211,
+        430
+      ],
+      "expected_cam_px": [
+        488.00626201335814,
+        170.20927906829377
+      ],
+      "camera_px": [
+        487.3926782273603,
+        169.60886319845858
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.7,
+      "margin_mm": 18.5,
+      "area": 22,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        220,
+        515
+      ],
+      "expected_cam_px": [
+        485.7968967107008,
+        135.62378127330356
+      ],
+      "camera_px": [
+        485.4685908319185,
+        135.80475382003397
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.9,
+      "margin_mm": 5.7,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        228,
+        311
+      ],
+      "expected_cam_px": [
+        479.01672104899376,
+        219.97317850863908
+      ],
+      "camera_px": [
+        478.87753222836096,
+        219.37937384898711
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.7,
+      "margin_mm": 5.9,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        249,
+        437
+      ],
+      "expected_cam_px": [
+        472.1203546585491,
+        169.87123711700954
+      ],
+      "camera_px": [
+        471.30304127443884,
+        169.55141202027517
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.9,
+      "margin_mm": 1.6,
+      "area": 23
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        200,
+        394
+      ],
+      "expected_cam_px": [
+        492.19277600636644,
+        183.9504465905808
+      ],
+      "camera_px": [
+        492.4274193548387,
+        183.2540322580645
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.1,
+      "margin_mm": 3.0,
+      "area": 11
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        280,
+        387
+      ],
+      "expected_cam_px": [
+        458.8505209244721,
+        190.6528663916365
+      ],
+      "camera_px": [
+        457.93342036553526,
+        189.59268929503915
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.5,
+      "margin_mm": 11.9,
+      "area": 10,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        400,
+        398
+      ],
+      "expected_cam_px": [
+        410.39882494019986,
+        184.02905464924913
+      ],
+      "camera_px": [
+        411.3876712328767,
+        183.22054794520548
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.4,
+      "margin_mm": 11.8,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        392,
+        509
+      ],
+      "expected_cam_px": [
+        415.31094215397536,
+        138.30023907877637
+      ],
+      "camera_px": [
+        416.15205479452055,
+        138.6095890410959
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.0,
+      "margin_mm": 11.1,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        274,
+        497
+      ],
+      "expected_cam_px": [
+        462.92749838140764,
+        144.7805101796992
+      ],
+      "camera_px": [
+        462.034375,
+        144.92109375
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.0,
+      "margin_mm": 11.1,
+      "area": 9,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        307,
+        417
+      ],
+      "expected_cam_px": [
+        448.15705180733886,
+        177.7948824795319
+      ],
+      "camera_px": [
+        448.17486048365663,
+        177.3972893967579
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.8,
+      "area": 37,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        328,
+        419
+      ],
+      "expected_cam_px": [
+        439.8654164448055,
+        176.66259186546324
+      ],
+      "camera_px": [
+        439.6536402569593,
+        176.21895074946468
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 24.2,
+      "area": 36,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        348,
+        421
+      ],
+      "expected_cam_px": [
+        431.57560784962203,
+        175.5305507114147
+      ],
+      "camera_px": [
+        431.6204399141631,
+        175.1244635193133
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 24.2,
+      "area": 36,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        369,
+        423
+      ],
+      "expected_cam_px": [
+        423.28762541815996,
+        174.39875893495588
+      ],
+      "camera_px": [
+        423.00814289466774,
+        173.9873916469661
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.6,
+      "margin_mm": 23.4,
+      "area": 37,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        306,
+        436
+      ],
+      "expected_cam_px": [
+        448.89673564312517,
+        169.87216124482393
+      ],
+      "camera_px": [
+        448.9169337606838,
+        169.4465811965812
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.8,
+      "area": 37,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        368,
+        442
+      ],
+      "expected_cam_px": [
+        424.10171408475105,
+        166.4888416542646
+      ],
+      "camera_px": [
+        424.0212004405286,
+        166.08287444933922
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.6,
+      "area": 36,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        305,
+        455
+      ],
+      "expected_cam_px": [
+        449.6319908166208,
+        161.9968752183416
+      ],
+      "camera_px": [
+        449.57463284379173,
+        161.713217623498
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.3,
+      "margin_mm": 23.8,
+      "area": 37,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        367,
+        461
+      ],
+      "expected_cam_px": [
+        424.9109302106583,
+        158.62626736622025
+      ],
+      "camera_px": [
+        424.58211624441134,
+        158.4193740685544
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 23.4,
+      "area": 33,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        365,
+        480
+      ],
+      "expected_cam_px": [
+        425.7153174105681,
+        150.81061229811115
+      ],
+      "camera_px": [
+        425.8276515151515,
+        150.48295454545453
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 23.4,
+      "area": 36,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        340,
+        379
+      ],
+      "expected_cam_px": [
+        434.0734707405047,
+        192.87697449322457
+      ],
+      "camera_px": [
+        434.1744649079144,
+        192.5204081632653
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 4.9,
+      "area": 36
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        333,
+        516
+      ],
+      "expected_cam_px": [
+        439.634290261046,
+        136.21421952788432
+      ],
+      "camera_px": [
+        439.39542738373603,
+        135.80722265523514
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 4.1,
+      "area": 36
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        263,
+        441
+      ],
+      "expected_cam_px": [
+        466.60520135778074,
+        168.29380472296037
+      ],
+      "camera_px": [
+        466.3404088050315,
+        167.87342767295598
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.6,
+      "margin_mm": 4.8,
+      "area": 37
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        410,
+        455
+      ],
+      "expected_cam_px": [
+        407.18602767362484,
+        160.1891182670305
+      ],
+      "camera_px": [
+        406.61253701875614,
+        158.59526159921026
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.9,
+      "margin_mm": 3.7,
+      "area": 17
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        398,
+        365
+      ],
+      "expected_cam_px": [
+        410.6845336655416,
+        197.5067010261414
+      ],
+      "camera_px": [
+        411.4690635451505,
+        198.10953177257525
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.2,
+      "margin_mm": 5.4,
+      "area": 8,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        288,
+        354
+      ],
+      "expected_cam_px": [
+        454.6754241678474,
+        203.52853660484493
+      ],
+      "camera_px": [
+        453.2472049689441,
+        203.84844720496895
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.5,
+      "margin_mm": 5.4,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        313,
+        257
+      ],
+      "expected_cam_px": [
+        443.8332121109614,
+        239.11778506392554
+      ],
+      "camera_px": [
+        444.4293695131684,
+        239.5945730247406
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.0,
+      "margin_mm": 4.6,
+      "area": 9
+    },
+    {
+      "face": "+y",
+      "kind": "corner",
+      "projector_px": [
+        417,
+        268
+      ],
+      "expected_cam_px": [
+        401.9107472545169,
+        233.35844096483783
+      ],
+      "camera_px": [
+        402.0,
+        233.05371900826447
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 5.5,
+      "area": 3,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        321,
+        332
+      ],
+      "expected_cam_px": [
+        441.4155889516504,
+        211.02483222280392
+      ],
+      "camera_px": [
+        441.4052996085516,
+        211.16260162601625
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.2,
+      "margin_mm": 16.7,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        325,
+        315
+      ],
+      "expected_cam_px": [
+        439.6101613568155,
+        217.2496469794445
+      ],
+      "camera_px": [
+        439.5591879778539,
+        217.39994727128922
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.2,
+      "margin_mm": 25.0,
+      "area": 31,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        384,
+        304
+      ],
+      "expected_cam_px": [
+        415.79579528723843,
+        220.34883251896724
+      ],
+      "camera_px": [
+        415.5262855501293,
+        220.67222062625683
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.5,
+      "margin_mm": 24.7,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        347,
+        301
+      ],
+      "expected_cam_px": [
+        430.48676991125467,
+        222.36417816246671
+      ],
+      "camera_px": [
+        430.42579365079365,
+        222.04484126984127
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 25.6,
+      "area": 19,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        369,
+        286
+      ],
+      "expected_cam_px": [
+        421.51385287341657,
+        227.39435408624826
+      ],
+      "camera_px": [
+        421.5086413187982,
+        227.6578037755916
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.4,
+      "margin_mm": 16.5,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        351,
+        284
+      ],
+      "expected_cam_px": [
+        428.80002395612865,
+        228.39449610714934
+      ],
+      "camera_px": [
+        428.87608225108227,
+        228.52218614718615
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.2,
+      "margin_mm": 16.7,
+      "area": 29,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "cell",
+      "projector_px": [
+        333,
+        282
+      ],
+      "expected_cam_px": [
+        436.08760642304503,
+        229.3948318628165
+      ],
+      "camera_px": [
+        436.1984624145786,
+        229.5754555808656
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.3,
+      "margin_mm": 16.6,
+      "area": 27,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        244,
+        299
+      ],
+      "expected_cam_px": [
+        472.42389506546135,
+        225.0857368625189
+      ],
+      "camera_px": [
+        472.3036197980793,
+        224.4934745136666
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.8,
+      "margin_mm": 5.6,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        466,
+        320
+      ],
+      "expected_cam_px": [
+        382.8590544817112,
+        212.80260831487203
+      ],
+      "camera_px": [
+        382.50077375425565,
+        213.008356545961
+      ],
+      "measured_face": "+y",
+      "distance_mm": 0.5,
+      "margin_mm": 5.6,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        342,
+        362
+      ],
+      "expected_cam_px": [
+        432.93799373732867,
+        199.5529260655643
+      ],
+      "camera_px": [
+        432.8695228821811,
+        200.67770204479066
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.4,
+      "margin_mm": 4.9,
+      "area": 6
+    },
+    {
+      "face": "+y",
+      "kind": "face",
+      "projector_px": [
+        366,
+        259
+      ],
+      "expected_cam_px": [
+        422.55558854376966,
+        237.3668103623558
+      ],
+      "camera_px": [
+        422.2522935779817,
+        238.28841743119267
+      ],
+      "measured_face": "+y",
+      "distance_mm": 1.3,
+      "margin_mm": 2.2,
+      "area": 13
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        425,
+        503
+      ],
+      "expected_cam_px": [
+        401.98846862269136,
+        139.78818148611893
+      ],
+      "camera_px": [
+        401.290473017988,
+        139.1419053964024
+      ],
+      "measured_face": "+x",
+      "distance_mm": 1.5,
+      "margin_mm": 5.8,
+      "area": 11,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        432,
+        403
+      ],
+      "expected_cam_px": [
+        397.3417059730733,
+        181.10015835424863
+      ],
+      "camera_px": [
+        396.9854267869535,
+        180.9680777238029
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.6,
+      "margin_mm": 5.3,
+      "area": 12,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        515,
+        378
+      ],
+      "expected_cam_px": [
+        364.11659609307185,
+        186.14317153532875
+      ],
+      "camera_px": [
+        363.9877800407332,
+        186.4467073998642
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 5.0,
+      "area": 25
+    },
+    {
+      "face": "+x",
+      "kind": "corner",
+      "projector_px": [
+        508,
+        473
+      ],
+      "expected_cam_px": [
+        368.9938874256037,
+        147.06784162774073
+      ],
+      "camera_px": [
+        368.16579100992413,
+        146.189725627554
+      ],
+      "measured_face": "+x",
+      "distance_mm": 2.0,
+      "margin_mm": 3.6,
+      "area": 13
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        462,
+        467
+      ],
+      "expected_cam_px": [
+        386.724704046888,
+        152.56812759614172
+      ],
+      "camera_px": [
+        386.8635987875448,
+        152.38881234499863
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.3,
+      "margin_mm": 24.7,
+      "area": 28,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        463,
+        450
+      ],
+      "expected_cam_px": [
+        385.9124373359953,
+        159.46516655578395
+      ],
+      "camera_px": [
+        386.0976620301864,
+        159.5862681266647
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 24.5,
+      "area": 27,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        465,
+        433
+      ],
+      "expected_cam_px": [
+        385.09587194406555,
+        166.39870605175247
+      ],
+      "camera_px": [
+        385.02856083086056,
+        166.34050445103858
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.1,
+      "margin_mm": 24.9,
+      "area": 21,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        476,
+        462
+      ],
+      "expected_cam_px": [
+        381.050511875063,
+        153.72707832246743
+      ],
+      "camera_px": [
+        381.32412965186074,
+        153.56542617046819
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 25.6,
+      "area": 26,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        479,
+        429
+      ],
+      "expected_cam_px": [
+        379.40811989743275,
+        167.42641985546334
+      ],
+      "camera_px": [
+        379.4913622902271,
+        166.99136229022704
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 25.2,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        480,
+        412
+      ],
+      "expected_cam_px": [
+        378.58045276985877,
+        174.33006698154657
+      ],
+      "camera_px": [
+        378.9200143472023,
+        174.05021520803444
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.5,
+      "margin_mm": 25.7,
+      "area": 22,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        492,
+        440
+      ],
+      "expected_cam_px": [
+        374.6618891223414,
+        161.631088436114
+      ],
+      "camera_px": [
+        374.39150558126875,
+        161.6196569561666
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.4,
+      "margin_mm": 16.4,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        493,
+        424
+      ],
+      "expected_cam_px": [
+        373.8321932062408,
+        168.43392805589733
+      ],
+      "camera_px": [
+        373.72091690544414,
+        168.3785100286533
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.2,
+      "margin_mm": 16.7,
+      "area": 29,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "cell",
+      "projector_px": [
+        494,
+        407
+      ],
+      "expected_cam_px": [
+        372.9981815033999,
+        175.27215365801175
+      ],
+      "camera_px": [
+        373.39741518578353,
+        174.19870759289176
+      ],
+      "measured_face": "+x",
+      "distance_mm": 1.3,
+      "margin_mm": 17.3,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        480,
+        336
+      ],
+      "expected_cam_px": [
+        377.4629711266244,
+        206.0539784947546
+      ],
+      "camera_px": [
+        377.34828424750066,
+        206.17157524993246
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.2,
+      "margin_mm": 5.7,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        464,
+        539
+      ],
+      "expected_cam_px": [
+        387.42543794074345,
+        122.25216090146542
+      ],
+      "camera_px": [
+        387.3941908713693,
+        121.82230900659019
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.6,
+      "margin_mm": 5.3,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        426,
+        454
+      ],
+      "expected_cam_px": [
+        400.58605918401906,
+        160.113282114499
+      ],
+      "camera_px": [
+        400.0,
+        159.45317725752508
+      ],
+      "measured_face": "+x",
+      "distance_mm": 1.3,
+      "margin_mm": 4.4,
+      "area": 4
+    },
+    {
+      "face": "+x",
+      "kind": "face",
+      "projector_px": [
+        514,
+        425
+      ],
+      "expected_cam_px": [
+        365.5373391568562,
+        166.65437192064184
+      ],
+      "camera_px": [
+        365.1553899082569,
+        166.4678899082569
+      ],
+      "measured_face": "+x",
+      "distance_mm": 0.7,
+      "margin_mm": 2.9,
+      "area": 14
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        280,
+        523
+      ],
+      "expected_cam_px": [
+        460.94940777562493,
+        133.82851657852547
+      ],
+      "camera_px": [
+        461.0613567073171,
+        134.1028963414634
+      ],
+      "measured_face": "-y",
+      "distance_mm": 0.8,
+      "margin_mm": 3.9,
+      "area": 24
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        387,
+        533
+      ],
+      "expected_cam_px": [
+        418.10510430559134,
+        128.00379507659642
+      ]
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        398,
+        557
+      ],
+      "expected_cam_px": [
+        414.90125772465166,
+        113.74285695399172
+      ],
+      "camera_px": [
+        414.66138032305435,
+        115.28810572687225
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.9,
+      "margin_mm": 11.0,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "corner",
+      "projector_px": [
+        298,
+        548
+      ],
+      "expected_cam_px": [
+        454.96838441757575,
+        119.18265539323974
+      ],
+      "camera_px": [
+        453.2682926829268,
+        123.00731707317073
+      ],
+      "measured_face": "-y",
+      "distance_mm": 15.4,
+      "margin_mm": 20.0,
+      "area": 7,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        346,
+        535
+      ],
+      "expected_cam_px": [
+        434.73151667602684,
+        126.74110665648263
+      ],
+      "camera_px": [
+        434.993553008596,
+        125.17263610315186
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.6,
+      "margin_mm": 22.0,
+      "area": 13,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        313,
+        536
+      ],
+      "expected_cam_px": [
+        448.2805867711264,
+        126.1530027729122
+      ],
+      "camera_px": [
+        448.4132553606238,
+        123.81481481481481
+      ],
+      "measured_face": "-y",
+      "distance_mm": 8.4,
+      "margin_mm": 25.3,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        349,
+        539
+      ],
+      "expected_cam_px": [
+        433.96688834753456,
+        124.20817482153046
+      ],
+      "camera_px": [
+        434.4029850746269,
+        124.12189054726367
+      ],
+      "measured_face": "-y",
+      "distance_mm": 0.8,
+      "margin_mm": 25.3,
+      "area": 19,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        319,
+        544
+      ],
+      "expected_cam_px": [
+        446.47923839068284,
+        121.2140520206736
+      ],
+      "camera_px": [
+        447.49133858267714,
+        123.00472440944881
+      ],
+      "measured_face": "-y",
+      "distance_mm": 6.0,
+      "margin_mm": 22.8,
+      "area": 6,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        336,
+        546
+      ],
+      "expected_cam_px": [
+        439.4837161762785,
+        120.26399416116702
+      ],
+      "camera_px": [
+        438.02459646425825,
+        122.48193697156034
+      ],
+      "measured_face": "-y",
+      "distance_mm": 9.1,
+      "margin_mm": 25.5,
+      "area": 12,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        353,
+        548
+      ],
+      "expected_cam_px": [
+        432.48949431195757,
+        119.31411290145937
+      ],
+      "camera_px": [
+        433.76235541535226,
+        121.10410094637224
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.9,
+      "margin_mm": 22.7,
+      "area": 9,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "cell",
+      "projector_px": [
+        371,
+        549
+      ],
+      "expected_cam_px": [
+        425.49657243518396,
+        118.36440819231493
+      ],
+      "camera_px": [
+        425.31779661016947,
+        119.72033898305085
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.0,
+      "margin_mm": 21.8,
+      "area": 22,
+      "accepted": true
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        448,
+        551
+      ],
+      "expected_cam_px": [
+        393.964432145484,
+        117.5289438726346
+      ],
+      "camera_px": [
+        393.6580829756795,
+        119.13876967095851
+      ],
+      "measured_face": "-y",
+      "distance_mm": 5.8,
+      "margin_mm": 1.9,
+      "area": 17
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        234,
+        530
+      ],
+      "expected_cam_px": [
+        480.346747574381,
+        129.26443559590925
+      ],
+      "camera_px": [
+        479.75706554419725,
+        130.16536380036078
+      ],
+      "measured_face": "-y",
+      "distance_mm": 3.7,
+      "margin_mm": 4.8,
+      "area": 34
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        333,
+        527
+      ],
+      "expected_cam_px": [
+        439.6472541623087,
+        131.31350709010195
+      ],
+      "camera_px": [
+        439.51116625310175,
+        131.9806451612903
+      ],
+      "measured_face": "-y",
+      "distance_mm": 2.3,
+      "margin_mm": 1.3,
+      "area": 18
+    },
+    {
+      "face": "-y",
+      "kind": "face",
+      "projector_px": [
+        349,
+        553
+      ],
+      "expected_cam_px": [
+        434.7865554681149,
+        116.01514221412542
+      ],
+      "camera_px": [
+        434.4837153196622,
+        115.51145958986731
+      ],
+      "measured_face": "-y",
+      "distance_mm": 1.8,
+      "margin_mm": 1.8,
+      "area": 8
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        250,
+        385
+      ],
+      "expected_cam_px": [
+        470.8734466955167,
+        191.15153454757674
+      ],
+      "camera_px": [
+        470.8213141025641,
+        191.41185897435898
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.3,
+      "margin_mm": 4.7,
+      "area": 11
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        246,
+        486
+      ],
+      "expected_cam_px": [
+        474.3737509205149,
+        149.64247498564998
+      ],
+      "camera_px": [
+        473.8406123367852,
+        149.29851418280055
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.3,
+      "margin_mm": 3.5,
+      "area": 19
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        200,
+        443
+      ],
+      "expected_cam_px": [
+        493.10021432249727,
+        163.98269874986917
+      ],
+      "camera_px": [
+        493.61444921316166,
+        163.42274678111588
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.7,
+      "margin_mm": 3.9,
+      "area": 13
+    },
+    {
+      "face": "-x",
+      "kind": "corner",
+      "projector_px": [
+        203,
+        348
+      ],
+      "expected_cam_px": [
+        490.0774165506639,
+        203.37736767403635
+      ]
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        236,
+        434
+      ],
+      "expected_cam_px": [
+        477.7235724036087,
+        170.08206481094692
+      ],
+      "camera_px": [
+        478.34090909090907,
+        169.99371373307542
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.6,
+      "margin_mm": 17.9,
+      "area": 18,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        228,
+        410
+      ],
+      "expected_cam_px": [
+        480.4714124421262,
+        179.41948426757472
+      ],
+      "camera_px": [
+        481.25652565256524,
+        179.27767776777677
+      ],
+      "measured_face": "-x",
+      "distance_mm": 2.0,
+      "margin_mm": 26.7,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        221,
+        387
+      ],
+      "expected_cam_px": [
+        483.1796527927591,
+        188.6223402521852
+      ],
+      "camera_px": [
+        483.5644283121597,
+        188.25725952813067
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.1,
+      "margin_mm": 24.3,
+      "area": 20,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        220,
+        420
+      ],
+      "expected_cam_px": [
+        484.28555743185655,
+        174.7572733391246
+      ],
+      "camera_px": [
+        484.0864578738421,
+        174.89148654609616
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.6,
+      "margin_mm": 25.7,
+      "area": 21,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        219,
+        437
+      ],
+      "expected_cam_px": [
+        484.8341805111994,
+        167.8790168998113
+      ],
+      "camera_px": [
+        485.2906474820144,
+        167.3884892086331
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.4,
+      "margin_mm": 24.2,
+      "area": 19,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "cell",
+      "projector_px": [
+        211,
+        430
+      ],
+      "expected_cam_px": [
+        488.00626201335814,
+        170.20927906829377
+      ],
+      "camera_px": [
+        487.4046692607004,
+        169.61608300907912
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.6,
+      "margin_mm": 18.5,
+      "area": 22,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        220,
+        515
+      ],
+      "expected_cam_px": [
+        485.7968967107008,
+        135.62378127330356
+      ],
+      "camera_px": [
+        485.474930790526,
+        135.80898185173794
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.9,
+      "margin_mm": 5.7,
+      "area": 30,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        228,
+        311
+      ],
+      "expected_cam_px": [
+        479.01672104899376,
+        219.97317850863908
+      ],
+      "camera_px": [
+        478.85283018867926,
+        219.3910014513788
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.7,
+      "margin_mm": 5.9,
+      "area": 32,
+      "accepted": true
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        249,
+        437
+      ],
+      "expected_cam_px": [
+        472.1203546585491,
+        169.87123711700954
+      ],
+      "camera_px": [
+        472.64271047227925,
+        169.68377823408625
+      ],
+      "measured_face": "-x",
+      "distance_mm": 1.3,
+      "margin_mm": 4.7,
+      "area": 8
+    },
+    {
+      "face": "-x",
+      "kind": "face",
+      "projector_px": [
+        200,
+        394
+      ],
+      "expected_cam_px": [
+        492.19277600636644,
+        183.9504465905808
+      ],
+      "camera_px": [
+        492.26257668711656,
+        183.29815950920246
+      ],
+      "measured_face": "-x",
+      "distance_mm": 0.8,
+      "margin_mm": 3.5,
+      "area": 7
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        279,
+        386
+      ],
+      "expected_cam_px": [
+        458.8505209244721,
+        190.6528663916365
+      ],
+      "camera_px": [
+        457.99310344827586,
+        189.52107279693487
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.5,
+      "margin_mm": 11.9,
+      "area": 10,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        400,
+        398
+      ],
+      "expected_cam_px": [
+        410.39882494019986,
+        184.02905464924913
+      ],
+      "camera_px": [
+        411.2394822006473,
+        183.22168284789643
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.3,
+      "margin_mm": 11.6,
+      "area": 4,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        392,
+        509
+      ],
+      "expected_cam_px": [
+        415.31094215397536,
+        138.30023907877637
+      ],
+      "camera_px": [
+        415.6012084592145,
+        138.60574018126889
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 11.1,
+      "area": 5,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "corner",
+      "projector_px": [
+        274,
+        497
+      ],
+      "expected_cam_px": [
+        462.92749838140764,
+        144.7805101796992
+      ],
+      "camera_px": [
+        462.1345532831001,
+        145.1054897739505
+      ],
+      "measured_face": "top",
+      "distance_mm": 1.0,
+      "margin_mm": 11.3,
+      "area": 7,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        307,
+        417
+      ],
+      "expected_cam_px": [
+        448.15705180733886,
+        177.7948824795319
+      ],
+      "camera_px": [
+        448.15110812625926,
+        177.38885157824043
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.8,
+      "area": 37,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        328,
+        419
+      ],
+      "expected_cam_px": [
+        439.8654164448055,
+        176.66259186546324
+      ],
+      "camera_px": [
+        439.5778839088905,
+        176.37950036737692
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 24.0,
+      "area": 33,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        348,
+        421
+      ],
+      "expected_cam_px": [
+        431.57560784962203,
+        175.5305507114147
+      ],
+      "camera_px": [
+        431.6211748153359,
+        175.12029546253956
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 24.2,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        369,
+        423
+      ],
+      "expected_cam_px": [
+        423.28762541815996,
+        174.39875893495588
+      ],
+      "camera_px": [
+        423.20344456404735,
+        174.05956225331897
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 23.6,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        306,
+        436
+      ],
+      "expected_cam_px": [
+        448.89673564312517,
+        169.87216124482393
+      ],
+      "camera_px": [
+        448.7681755829904,
+        169.39711934156378
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.6,
+      "margin_mm": 23.9,
+      "area": 35,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        368,
+        442
+      ],
+      "expected_cam_px": [
+        424.10171408475105,
+        166.4888416542646
+      ],
+      "camera_px": [
+        423.85496183206106,
+        166.0645385149202
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.4,
+      "area": 34,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        305,
+        455
+      ],
+      "expected_cam_px": [
+        449.6319908166208,
+        161.9968752183416
+      ],
+      "camera_px": [
+        449.5859375,
+        161.59147135416666
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.8,
+      "area": 35,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        366,
+        461
+      ],
+      "expected_cam_px": [
+        424.9109302106583,
+        158.62626736622025
+      ],
+      "camera_px": [
+        425.1030679076181,
+        158.28955532574975
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.5,
+      "margin_mm": 23.9,
+      "area": 33,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "cell",
+      "projector_px": [
+        365,
+        480
+      ],
+      "expected_cam_px": [
+        425.7153174105681,
+        150.81061229811115
+      ],
+      "camera_px": [
+        425.72352941176473,
+        150.20371517027863
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.7,
+      "margin_mm": 23.0,
+      "area": 36,
+      "accepted": true
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        340,
+        379
+      ],
+      "expected_cam_px": [
+        434.0734707405047,
+        192.87697449322457
+      ],
+      "camera_px": [
+        434.1549915397631,
+        192.51708967851098
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.4,
+      "margin_mm": 4.9,
+      "area": 36
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        332,
+        516
+      ],
+      "expected_cam_px": [
+        439.634290261046,
+        136.21421952788432
+      ],
+      "camera_px": [
+        439.656121045392,
+        135.60385144429162
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.7,
+      "margin_mm": 3.8,
+      "area": 30
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        263,
+        441
+      ],
+      "expected_cam_px": [
+        466.60520135778074,
+        168.29380472296037
+      ],
+      "camera_px": [
+        466.40579710144925,
+        167.69307568438003
+      ],
+      "measured_face": "top",
+      "distance_mm": 0.7,
+      "margin_mm": 4.8,
+      "area": 35
+    },
+    {
+      "face": "top",
+      "kind": "face",
+      "projector_px": [
+        410,
+        455
+      ],
+      "expected_cam_px": [
+        407.18602767362484,
+        160.1891182670305
+      ],
+      "camera_px": [
+        407.30372148859544,
+        157.55942376950782
+      ],
+      "measured_face": "top",
+      "distance_mm": 3.1,
+      "margin_mm": 4.3,
+      "area": 7
+    }
+  ],
+  "accepted_face_dots": 111,
+  "projector_table_pos_mm": [
+    361.8499843022718,
+    27.341736578956343,
+    596.0067066965538
+  ],
+  "face_dot_validation": {
+    "count": 38,
+    "mean_projector_px": 1.5644038787888799,
+    "max_projector_px": 8.089784156401208
+  },
+  "projector": {
+    "K": [
+      [
+        1288.94994688704,
+        0.0,
+        640.0
+      ],
+      [
+        0.0,
+        1288.94994688704,
+        93.0189864272737
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rvec": [
+      -2.951722131372245,
+      -0.14403569584994902,
+      0.010298025851183203
+    ],
+    "tvec": [
+      -134.7198921789892,
+      150.4615965912345,
+      616.5882756009116
+    ],
+    "train_mean_px": 1.1365490141018058,
+    "heldout_mean_px": 1.3838020580046029,
+    "heldout_max_px": 8.089784156401208,
+    "rejected_correspondences": 0,
+    "surfaces": {
+      "+y": 1,
+      "table": 43
+    },
+    "points_mm": [
+      [
+        151.34810391697144,
+        -61.73885330081302,
+        0.0
+      ],
+      [
+        213.5319628480456,
+        -55.281551135160356,
+        0.0
+      ],
+      [
+        221.39350345563506,
+        -124.42635922831184,
+        0.0
+      ],
+      [
+        157.91730241194654,
+        -131.1737305065205,
+        0.0
+      ],
+      [
+        142.29426463876112,
+        28.59693947671383,
+        0.0
+      ],
+      [
+        202.88851893357074,
+        34.91499052959975,
+        0.0
+      ],
+      [
+        210.6519841884049,
+        -30.816038108895754,
+        0.0
+      ],
+      [
+        148.6990639313401,
+        -37.26725993032366,
+        0.0
+      ],
+      [
+        133.7298771928772,
+        114.26164735381197,
+        0.0
+      ],
+      [
+        192.72106136199795,
+        120.3470826020098,
+        0.0
+      ],
+      [
+        200.1028506453436,
+        58.09995643916494,
+        0.0
+      ],
+      [
+        139.86995655121615,
+        51.9809110994195,
+        0.0
+      ],
+      [
+        250.5431856231408,
+        -51.212328432072724,
+        0.0
+      ],
+      [
+        312.1932069617312,
+        -44.67029416377994,
+        0.0
+      ],
+      [
+        322.2085438063731,
+        -113.50238184641867,
+        0.0
+      ],
+      [
+        259.06297463102237,
+        -120.25059396710341,
+        0.0
+      ],
+      [
+        238.99675957901,
+        38.56596114931196,
+        0.0
+      ],
+      [
+        299.3132558975473,
+        44.78397487879346,
+        0.0
+      ],
+      [
+        308.6121791997891,
+        -20.461655973524245,
+        0.0
+      ],
+      [
+        247.3852782526962,
+        -26.819118166371425,
+        0.0
+      ],
+      [
+        125.58793172091325,
+        195.39289241750188,
+        0.0
+      ],
+      [
+        183.17598735767388,
+        201.27301807674914,
+        0.0
+      ],
+      [
+        190.12631199799932,
+        142.21960156791255,
+        0.0
+      ],
+      [
+        131.5425063935349,
+        136.32007435559075,
+        0.0
+      ],
+      [
+        348.8376832113486,
+        -40.63505528940183,
+        0.0
+      ],
+      [
+        410.36334795140584,
+        -34.10968220883379,
+        0.0
+      ],
+      [
+        422.34865340486965,
+        -102.71520388968585,
+        0.0
+      ],
+      [
+        359.2455125040305,
+        -109.45307830456576,
+        0.0
+      ],
+      [
+        33.431813164379236,
+        186.0379383258295,
+        0.0
+      ],
+      [
+        91.25960447339511,
+        191.83793624922774,
+        0.0
+      ],
+      [
+        96.44463697165789,
+        132.63409883549366,
+        0.0
+      ],
+      [
+        37.69749921708987,
+        126.57958155341653,
+        0.0
+      ],
+      [
+        334.9914635845489,
+        48.572424163260735,
+        0.0
+      ],
+      [
+        394.7584135114442,
+        54.747734202318696,
+        0.0
+      ],
+      [
+        406.15146981571866,
+        -10.134971738795315,
+        0.0
+      ],
+      [
+        345.0782604394189,
+        -16.526180280517423,
+        0.0
+      ],
+      [
+        -59.01136831586736,
+        176.30024467377962,
+        0.0
+      ],
+      [
+        -1.103410225334997,
+        182.36129311673704,
+        0.0
+      ],
+      [
+        2.4463328583952233,
+        122.85669484299281,
+        0.0
+      ],
+      [
+        -56.36283638026502,
+        116.60341362651096,
+        0.0
+      ],
+      [
+        39.22631941544239,
+        104.2139545274304,
+        0.0
+      ],
+      [
+        98.40663593170171,
+        110.51096846387702,
+        0.0
+      ],
+      [
+        103.98533440759668,
+        48.0736216202925,
+        0.0
+      ],
+      [
+        47.14953190716817,
+        52.642397437966395,
+        26.411202722160738
+      ]
+    ],
+    "pixels": [
+      [
+        660.0,
+        555.0
+      ],
+      [
+        789.0,
+        555.0
+      ],
+      [
+        789.0,
+        684.0
+      ],
+      [
+        660.0,
+        684.0
+      ],
+      [
+        660.0,
+        380.0
+      ],
+      [
+        789.0,
+        380.0
+      ],
+      [
+        789.0,
+        509.0
+      ],
+      [
+        660.0,
+        509.0
+      ],
+      [
+        660.0,
+        205.0
+      ],
+      [
+        789.0,
+        205.0
+      ],
+      [
+        789.0,
+        334.0
+      ],
+      [
+        660.0,
+        334.0
+      ],
+      [
+        865.0,
+        555.0
+      ],
+      [
+        994.0,
+        555.0
+      ],
+      [
+        994.0,
+        684.0
+      ],
+      [
+        865.0,
+        684.0
+      ],
+      [
+        865.0,
+        380.0
+      ],
+      [
+        994.0,
+        380.0
+      ],
+      [
+        994.0,
+        509.0
+      ],
+      [
+        865.0,
+        509.0
+      ],
+      [
+        660.0,
+        30.0
+      ],
+      [
+        789.0,
+        30.0
+      ],
+      [
+        789.0,
+        159.0
+      ],
+      [
+        660.0,
+        159.0
+      ],
+      [
+        1070.0,
+        555.0
+      ],
+      [
+        1199.0,
+        555.0
+      ],
+      [
+        1199.0,
+        684.0
+      ],
+      [
+        1070.0,
+        684.0
+      ],
+      [
+        455.0,
+        30.0
+      ],
+      [
+        584.0,
+        30.0
+      ],
+      [
+        584.0,
+        159.0
+      ],
+      [
+        455.0,
+        159.0
+      ],
+      [
+        1070.0,
+        380.0
+      ],
+      [
+        1199.0,
+        380.0
+      ],
+      [
+        1199.0,
+        509.0
+      ],
+      [
+        1070.0,
+        509.0
+      ],
+      [
+        250.0,
+        30.0
+      ],
+      [
+        379.0,
+        30.0
+      ],
+      [
+        379.0,
+        159.0
+      ],
+      [
+        250.0,
+        159.0
+      ],
+      [
+        455.0,
+        205.0
+      ],
+      [
+        584.0,
+        205.0
+      ],
+      [
+        584.0,
+        334.0
+      ],
+      [
+        455.0,
+        334.0
+      ]
+    ],
+    "marker_ids": [
+      41,
+      41,
+      41,
+      41,
+      35,
+      35,
+      35,
+      35,
+      29,
+      29,
+      29,
+      29,
+      42,
+      42,
+      42,
+      42,
+      36,
+      36,
+      36,
+      36,
+      23,
+      23,
+      23,
+      23,
+      43,
+      43,
+      43,
+      43,
+      22,
+      22,
+      22,
+      22,
+      37,
+      37,
+      37,
+      37,
+      21,
+      21,
+      21,
+      21,
+      28,
+      28,
+      28,
+      28
+    ]
+  },
+  "validated": true,
+  "webcam_outline_assertion": {
+    "expected_pixels": 922,
+    "observed_pixels": 5445,
+    "mean_distance_cam_px": 0.053175706416368484,
+    "coverage_within_4px": 1.0
+  }
+}

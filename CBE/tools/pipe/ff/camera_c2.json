@@ -1,0 +1,41 @@
+{
+  "schema": "ff.camera_calibration",
+  "schema_version": 1,
+  "camera_id": 2,
+  "timestamp": "ff_20261113_143842",
+  "source_top": "/project1/kinectD",
+  "resolution": [
+    512,
+    424
+  ],
+  "method": "kinect_v2_sdk_factory_intrinsics",
+  "frame": "native_sdk_depth_pixels",
+  "factory_intrinsics": {
+    "FocalLengthX": 366.4035949707031,
+    "FocalLengthY": 366.4035949707031,
+    "PrincipalPointX": 258.5906982421875,
+    "PrincipalPointY": 207.15750122070312,
+    "RadialDistortionSecondOrder": 0.09204409271478653,
+    "RadialDistortionFourthOrder": -0.2721982002258301,
+    "RadialDistortionSixthOrder": 0.09316164255142212
+  },
+  "K": [
+    [
+      366.4035949707031,
+      0,
+      258.5906982421875
+    ],
+    [
+      0,
+      366.4035949707031,
+      207.15750122070312
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "pose_calibrated": false,
+  "note": "Depth is not an RGB marker camera. These are factory intrinsics, not a newly measured depth-to-FF pose or a static color-depth map."
+}

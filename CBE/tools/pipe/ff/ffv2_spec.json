@@ -1,0 +1,25 @@
+{
+  "units": "mm",
+  "frame": "ABC base in z=0, +z toward D; E opposite B across internal face ADC",
+  "vertices": {
+    "A": [-15.0, -8.660254037844386, 0.0],
+    "B": [15.0, -8.660254037844386, 0.0],
+    "C": [0.0, 17.32050807568877, 0.0],
+    "D": [0.0, 0.0, 36.05551275463989],
+    "E": [-25.557620274051672, 14.755698945069971, 30.663166830105418]
+  },
+  "edges_mm": {
+    "AB": 30, "BC": 30, "CA": 30,
+    "DA": 40, "DB": 40, "DC": 40,
+    "EA": 40, "EC": 40, "ED": 30
+  },
+  "faces": {
+    "DBC": {"color": "black", "rgb": [0, 0, 0], "track": true, "project": true},
+    "ADB": {"color": "green", "rgb": [0, 255, 0], "track": true, "project": true},
+    "DEC": {"color": "red", "rgb": [255, 0, 0], "track": true, "project": true},
+    "ADE": {"color": "violet", "rgb": [160, 0, 255], "track": true, "project": true},
+    "AEC": {"color": "yellow", "rgb": [255, 220, 0], "track": true, "project": true},
+    "ABC": {"color": "white", "rgb": [255, 255, 255], "track": false, "project": false}
+  },
+  "internal_face": "ADC"
+}

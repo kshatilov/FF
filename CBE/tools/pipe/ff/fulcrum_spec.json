@@ -1,0 +1,147 @@
+{
+  "units": "mm",
+  "frame": "origin = base centre, +z up. Side faces: id11=+y, id12=+x, id13=-y, id14=-x, id10=top. Marker corners in TL,TR,BR,BL order (matches cv2.aruco).",
+  "dict": "DICT_4X4_50",
+  "measured": {
+    "base_edge": 155.0,
+    "top_edge": 75.0,
+    "height": 42.5,
+    "face_tilt_deg": 46.7,
+    "marker_side_top": 55.0,
+    "marker_side_faces": 50.0,
+    "marker_gap_below_top_fold": 4.0
+  },
+  "markers": {
+    "10": {
+      "face": "top",
+      "size_mm": 55.0,
+      "corners_TL_TR_BR_BL": [
+        [
+          -27.5,
+          27.5,
+          42.5
+        ],
+        [
+          27.5,
+          27.5,
+          42.5
+        ],
+        [
+          27.5,
+          -27.5,
+          42.5
+        ],
+        [
+          -27.5,
+          -27.5,
+          42.5
+        ]
+      ]
+    },
+    "11": {
+      "face": "+y",
+      "size_mm": 50.0,
+      "corners_TL_TR_BR_BL": [
+        [
+          25.0,
+          40.24,
+          39.59
+        ],
+        [
+          -25.0,
+          40.24,
+          39.59
+        ],
+        [
+          -25.0,
+          74.51,
+          3.18
+        ],
+        [
+          25.0,
+          74.51,
+          3.18
+        ]
+      ]
+    },
+    "12": {
+      "face": "+x",
+      "size_mm": 50.0,
+      "corners_TL_TR_BR_BL": [
+        [
+          40.24,
+          -25.0,
+          39.59
+        ],
+        [
+          40.24,
+          25.0,
+          39.59
+        ],
+        [
+          74.51,
+          25.0,
+          3.18
+        ],
+        [
+          74.51,
+          -25.0,
+          3.18
+        ]
+      ]
+    },
+    "13": {
+      "face": "-y",
+      "size_mm": 50.0,
+      "corners_TL_TR_BR_BL": [
+        [
+          -25.0,
+          -40.24,
+          39.59
+        ],
+        [
+          25.0,
+          -40.24,
+          39.59
+        ],
+        [
+          25.0,
+          -74.51,
+          3.18
+        ],
+        [
+          -25.0,
+          -74.51,
+          3.18
+        ]
+      ]
+    },
+    "14": {
+      "face": "-x",
+      "size_mm": 50.0,
+      "corners_TL_TR_BR_BL": [
+        [
+          -40.24,
+          25.0,
+          39.59
+        ],
+        [
+          -40.24,
+          -25.0,
+          39.59
+        ],
+        [
+          -74.51,
+          -25.0,
+          3.18
+        ],
+        [
+          -74.51,
+          25.0,
+          3.18
+        ]
+      ]
+    }
+  },
+  "note": "MEASURED on the built object (base 155, top 75, height ~45, markers 55/50).  Face tilt derived from measured geometry; 'gap' assumed 4mm (unmeasured)."
+}

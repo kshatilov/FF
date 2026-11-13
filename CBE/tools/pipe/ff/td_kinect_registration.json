@@ -1,0 +1,148 @@
+{
+  "timestamp": "ff_20261113_143842",
+  "source": "kinectC",
+  "resolution": [
+    1280,
+    720
+  ],
+  "K": [
+    [
+      706.3817610950325,
+      0.0,
+      628.0244593142049
+    ],
+    [
+      0.0,
+      705.7540913763729,
+      367.7110313656285
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "D": [
+    0.015581990915425264,
+    -0.00442243670624772,
+    -7.601827716883841e-05,
+    -0.001979782243820141,
+    0.0017564213393700073
+  ],
+  "sdk_mapper_fit_rms_px": 0.19657039912576435,
+  "webcam": {
+    "markers": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "mean_px": 1.3659370581485573,
+    "max_px": 2.657816855867783
+  },
+  "kinect": {
+    "markers": [
+      10,
+      12,
+      13
+    ],
+    "mean_px": 1.3897185816589852,
+    "max_px": 2.4911128967103577
+  },
+  "reference_drift_px": 0.629277765750885,
+  "webcam_from_kinect": [
+    [
+      -0.999701069582704,
+      0.0148870589126198,
+      0.01939450829823027,
+      -31.401009038501925
+    ],
+    [
+      0.011919225853479116,
+      -0.3958528423198465,
+      0.9182366031052961,
+      -608.9047614395232
+    ],
+    [
+      0.02134721364140273,
+      0.9181932817790769,
+      0.39555706764703025,
+      153.90848078668608
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "camera_from_reference": [
+    [
+      0.9975012306778595,
+      0.053806708577874215,
+      -0.04578354407613227,
+      -82.95075446075624
+    ],
+    [
+      -0.011703322487683868,
+      -0.5132402037622177,
+      -0.858165208735979,
+      205.62892529903868
+    ],
+    [
+      -0.06967300078871802,
+      0.8565566714200135,
+      -0.5113280176236799,
+      703.5683719853668
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "calibration_used": "C:\\dev\\ProjectSynchronicity\\tools\\pipe\\ff\\calibration_current.json",
+  "depth_factory": {
+    "schema": "ff.camera_calibration",
+    "schema_version": 1,
+    "camera_id": 2,
+    "timestamp": "ff_20261113_143842",
+    "source_top": "/project1/kinectD",
+    "resolution": [
+      512,
+      424
+    ],
+    "method": "kinect_v2_sdk_factory_intrinsics",
+    "frame": "native_sdk_depth_pixels",
+    "factory_intrinsics": {
+      "FocalLengthX": 366.4035949707031,
+      "FocalLengthY": 366.4035949707031,
+      "PrincipalPointX": 258.5906982421875,
+      "PrincipalPointY": 207.15750122070312,
+      "RadialDistortionSecondOrder": 0.09204409271478653,
+      "RadialDistortionFourthOrder": -0.2721982002258301,
+      "RadialDistortionSixthOrder": 0.09316164255142212
+    },
+    "K": [
+      [
+        366.4035949707031,
+        0,
+        258.5906982421875
+      ],
+      [
+        0,
+        366.4035949707031,
+        207.15750122070312
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "pose_calibrated": false,
+    "note": "Depth is not an RGB marker camera. These are factory intrinsics, not a newly measured depth-to-FF pose or a static color-depth map."
+  }
+}

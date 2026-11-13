@@ -1,0 +1,187 @@
+{
+  "schema": "ff.projective.profile",
+  "schema_version": 1,
+  "camera_id": 0,
+  "projector_id": 0,
+  "surface_id": "Table_01",
+  "revision": "06d619d2971848a19adcabdcd34b43ba",
+  "geometry_revision": "0af6ba9b305b4bb3b38a9642250c237a",
+  "photometric_revision": null,
+  "geometry_sha256": "16052185b97de9949e5e6bee67d451a3ec1252e39dab9520f87cb9716998ceb5",
+  "P": {
+    "schema": "ff.hg",
+    "schema_version": 1,
+    "kind": "homography",
+    "created_utc": "2026-11-12T10:19:54+00:00",
+    "source": {
+      "id": "0",
+      "name": "webcam via TD /project1/camLogi",
+      "type": "camera",
+      "resolution": [
+        640,
+        480
+      ],
+      "capture_backend": "touchdesigner",
+      "top_path": "/project1/camLogi"
+    },
+    "destination": {
+      "id": "P0",
+      "name": "Fengmi M055MGN projector",
+      "type": "projector",
+      "resolution": [
+        1280,
+        720
+      ],
+      "adb": "192.168.0.170:5555",
+      "adb_note": "address recorded only; hg makes no ADB calls",
+      "image_path": "TD branch /project1/OART -> /project1/hg -> final_switch input 7 (HDMI)",
+      "td_branch": {
+        "pattern_top": "/project1/hg_pattern",
+        "oart": "/project1/OART",
+        "hg": "/project1/hg",
+        "switch": "/project1/final_switch",
+        "switch_input": 7,
+        "raster_source": "TD output raster, not an assumed HDMI mode"
+      }
+    },
+    "coordinate_convention": {
+      "origin": "top-left",
+      "x": "right",
+      "y": "down",
+      "pixels": "integer pixel centres",
+      "vectors": "column vectors",
+      "uv": "bottom-left origin, half-pixel centre convention (see tools/hg_geometry.py uv_to_pixel)"
+    },
+    "source_space": "raw_distorted_pixels",
+    "lens_policy": "planar_approximation_no_distortion_correction",
+    "validity": "fixed plane and fixed device configuration only; no lens distortion correction applied",
+    "H_source_to_destination": [
+      [
+        -0.0015026215749233745,
+        -6.52878955399126e-05,
+        0.8728800234071737
+      ],
+      [
+        5.0866744118776536e-05,
+        -0.001475498204626056,
+        0.4879299671581132
+      ],
+      [
+        3.0636912119123573e-10,
+        -2.8213049013092635e-10,
+        0.0006083332064039345
+      ]
+    ],
+    "H_destination_to_source": [
+      [
+        -664.3249175567639,
+        29.21728714132764,
+        929786.429011779
+      ],
+      [
+        -22.794984206442557,
+        -676.838609658014,
+        575584.4383365209
+      ],
+      [
+        0.00032399592696201164,
+        -0.0003286160958550262,
+        1643.6346422368847
+      ]
+    ],
+    "H_source_uv_to_destination_uv": [
+      [
+        -0.000751310710869407,
+        2.4483013726934126e-05,
+        0.0006583045993508375
+      ],
+      [
+        -4.5018943587626174e-05,
+        -0.0009835301411589379,
+        0.0009127710444914608
+      ],
+      [
+        1.9607623756239086e-07,
+        1.3542263526284465e-07,
+        0.0006081977716493562
+      ]
+    ],
+    "H_destination_uv_to_source_uv": [
+      [
+        -1328.649511117601,
+        -32.86926318743968,
+        1487.4408259206589
+      ],
+      [
+        61.20090734245557,
+        -1015.021557360077,
+        1457.0810509576158
+      ],
+      [
+        0.4147147865113749,
+        0.23660358901561887,
+        1643.3980409579535
+      ]
+    ],
+    "plane": "unspecified_flat_surface",
+    "diagnostics": {
+      "point_count": 44,
+      "inlier_count": 43,
+      "inlier_mask": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "ransac_threshold_destination_px": 3.0,
+      "inlier_mean_destination_px": 1.4717744707009297,
+      "inlier_max_destination_px": 2.4409315787023127,
+      "independent_validation": false
+    },
+    "warnings": [
+      "camera feed is the TD node raster; TD-side crops/flips/resizes would change this space",
+      "no independent validation performed"
+    ]
+  },
+  "TC": null
+}

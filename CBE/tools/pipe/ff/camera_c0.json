@@ -1,0 +1,52 @@
+{
+  "schema": "ff.camera_calibration",
+  "schema_version": 1,
+  "camera_id": 0,
+  "timestamp": "ff_20261113_143842",
+  "units": "mm",
+  "frame": "origin = base centre, +z up. Side faces: id11=+y, id12=+x, id13=-y, id14=-x, id10=top. Marker corners in TL,TR,BR,BL order (matches cv2.aruco).",
+  "source_top": "/project1/camLogi",
+  "resolution": [
+    640,
+    480
+  ],
+  "result": {
+    "K": [
+      [
+        543.1097939003148,
+        0.0,
+        322.7348813775199
+      ],
+      [
+        0.0,
+        543.1097939003148,
+        241.6825182081139
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "rvec": [
+      -0.06858388782203023,
+      3.111794538042207,
+      -0.21236289540215453
+    ],
+    "tvec": [
+      68.14755564013448,
+      -45.0549150012811,
+      619.669891815577
+    ],
+    "markers": [
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "mean_px": 1.5359036177106407,
+    "max_px": 3.062451684455557
+  },
+  "scope": "joint_rig_snapshot"
+}
