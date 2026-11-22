@@ -40,30 +40,30 @@ Reading the diagram:
 
 | Code | Categories | Description |
 |------|-----------|-------------|
-| **FF** | CBE+TD+APP+SODI | The framework and its physical calibration reference. The framework includes a shared spatial language, neccessary algebra and guidelines for creating and documenting FFs. |
-| **HW** | CBE+SODI | Hardware category |
-| **SODI**| SODI/DOSI| Smart objects - dumb interfaces. Or dumb objects smart interfaces. Old idea of using regular non-instrumented objects as inputs for digital systems. Revibrates with MyoKey - holding a beer can and controlling smart glasses. Final delivaerable - Roman Dodecahedron (RDDH) - LED and wire-instrumented (yes) 3d-drawn tetrahedron.   
-|**CBE**| CBE | Anything related to compute.
-|**TD**| TD | Touch designer projects, integration scripts, the bridge.
-| **SHELL** | CBE+TD | Shell / command interface (cli) for status checking, overseeing devices, calibrations, and workflows. |
-| **RAI** | CBE | Remote AI: ComfyUI / LLMs on demand. |
-| **LAI** | CBE | Local AI: MCPs, callbacks, and CLI bridges. |
-| **API** | CBE | Integration and device orchestration scripts. Should be self-sufficient and not rely on agents. Examples are: blender 3D-sculpture -embedding scripts, touch designer reset-to-default shell scripts |
-| **TDCP** | TD | TD Control Panel, config UI (Panel) sitting inside TD with previews and controls. Partly overlapping functionality with shell, compliments it with visual feedback. |
-| **SI** | TD | Sound integration. Encapsultes audio library, dynamic soundscapes and curves for precise sound-to-digital event correspondence (e.g., pitch modulation based on collision distance of meta quest controller and digital boundary such as the donut). |
-| **VJ** | TD+APP | Audio-reactive visuals. Prism Pulse exists and it is self-contained python ableton-bridge link with node.js frontend. Should be a library of cool TD presets with mic/system/pipe(ableton- implementation of it).  |
-| **OART** | CBE | Objects and activity recognition and tracking. Complex, and computationally complex: (A) runtime and (B) a set of tools. Encapsulates everything related to: (1) digital capture (recording) of sensor (cam, depth, sEMG, IMU) data, (2) Pattern extraction and databasing the extracted patterns, and (3) Workers with access to the real-time feed of sensors who recognize the learnt patterns and report their change.  |
-| **HMP** | CBE | Human mounted projectors [[(1)](https://youtu.be/Ls2Smn_-cbE?si=W2Aox2cy5kZyxKqg "AR Tabletop Interface using a Head-Mounted Projector"), [(2)](https://www.youtube.com/watch?v=IFI29N-dliw "Lightweight Wearable AR System using Head-Mounted Projector for Work Support")] hardware subproject. The general FF framework assumes moving cameras and _moving projectors_ as well. Challenges are hardware design, on-the-fly homography and spatial tracking. |
-| **SB** | CBE | Smart bracelets, bands and rings (Myo+). Exciting oppotunity to control and read electrodes in smart wearable devices. Enables SODI. |
-| **HCI** | SODI | Human-in-the-loop calibration and training. Protocols/checklists/instructions for calibration, and manual alignments (e.g. aligning a HMP's projector's beam with a shared landmark or a crosshair). |
-| **VKC** | SODI | Virtual or ''disconnected'' keyboards (and controllers). Conceptually relies on sEMG recognition and visual hand tracking. An example - keyboard outlines in a notebook (can be hand-drawn) or a printed QWERTY layout. Something like [[3](https://arxiv.org/html/2410.20081v3 "emg2qwerty")]. Relies on OART sEMG decode and  OART Media Pipe hand tracking. Needs an OART-DT Double truth system, that captures 2 independent signals (tracked joint movements and electrical activity) and can supply ground truth (such as the ''disconnected'' keyboard can be actually connected and keystrokes are well-recorded with timespamps).  |
-| **CHEBU** | SODI | Cheburashka plush toy as a controller subproject |
-| **XRC** | TD+APP | XR Stadium subproject. Watching (e)sports together on a shared canvas. Old ideas, new life. |
-| **XRF** | APP | XR Bonfire / shared collaborative projection. Relies on smoky environment (smoke machine or shisha) and multiple projective devices. |
-| **XRA** | APP | XR art performances. |
-| **XRT** | SODI+APP | XR Thesis. Tracking of a little black book, tracking hands via MediaPipe, projected visuals and texts complimenting the content of the book. |
-| **DEMO** | APP | Asset generation and running demos. Includes scripts for blender integration, concat video editor and a gallery of produced artifacts |
-| **XRBG** | SODI+APP | XR Board Games |
+| **FF** | 🟦 + 🟨 + 🟥 + 🟩 | The framework and its physical calibration reference. The framework includes a shared spatial language, neccessary algebra and guidelines for creating and documenting FFs. |
+| **HW** | 🟦 + 🟩 | Hardware category |
+| **SODI**| 🟩 | Smart objects - dumb interfaces. Or dumb objects smart interfaces. Old idea of using regular non-instrumented objects as inputs for digital systems. Revibrates with MyoKey - holding a beer can and controlling smart glasses. Final delivaerable - Roman Dodecahedron (RDDH) - LED and wire-instrumented (yes) 3d-drawn tetrahedron.   
+|**CBE**| 🟦 | Anything related to compute.
+|**TD**| 🟨 | Touch designer projects, integration scripts, the bridge.
+| **SHELL** | 🟦 + 🟨 | Shell / command interface (cli) for status checking, overseeing devices, calibrations, and workflows. |
+| **RAI** | 🟦 | Remote AI: ComfyUI / LLMs on demand. |
+| **LAI** | 🟦 | Local AI: MCPs, callbacks, and CLI bridges. |
+| **API** | 🟦 | Integration and device orchestration scripts. Should be self-sufficient and not rely on agents. Examples are: blender 3D-sculpture -embedding scripts, touch designer reset-to-default shell scripts |
+| **TDCP** | 🟨 | TD Control Panel, config UI (Panel) sitting inside TD with previews and controls. Partly overlapping functionality with shell, compliments it with visual feedback. |
+| **SI** | 🟨 | Sound integration. Encapsultes audio library, dynamic soundscapes and curves for precise sound-to-digital event correspondence (e.g., pitch modulation based on collision distance of meta quest controller and digital boundary such as the donut). |
+| **VJ** | 🟨 + 🟥 | Audio-reactive visuals. Prism Pulse exists and it is self-contained python ableton-bridge link with node.js frontend. Should be a library of cool TD presets with mic/system/pipe(ableton- implementation of it).  |
+| **OART** | 🟦 | Objects and activity recognition and tracking. Complex, and computationally complex: (A) runtime and (B) a set of tools. Encapsulates everything related to: (1) digital capture (recording) of sensor (cam, depth, sEMG, IMU) data, (2) Pattern extraction and databasing the extracted patterns, and (3) Workers with access to the real-time feed of sensors who recognize the learnt patterns and report their change.  |
+| **HMP** | 🟦 + 🟩 | Human mounted projectors [[(1)](https://youtu.be/Ls2Smn_-cbE?si=W2Aox2cy5kZyxKqg "AR Tabletop Interface using a Head-Mounted Projector"), [(2)](https://www.youtube.com/watch?v=IFI29N-dliw "Lightweight Wearable AR System using Head-Mounted Projector for Work Support")] hardware subproject. The general FF framework assumes moving cameras and _moving projectors_ as well. Challenges are hardware design, on-the-fly homography and spatial tracking. |
+| **SB** | 🟦 | Smart bracelets, bands and rings (Myo+). Exciting oppotunity to control and read electrodes in smart wearable devices. Enables SODI. |
+| **HCI** | 🟩 | Human-in-the-loop calibration and training. Protocols/checklists/instructions for calibration, and manual alignments (e.g. aligning a HMP's projector's beam with a shared landmark or a crosshair). |
+| **VKC** | 🟩 | Virtual or ''disconnected'' keyboards (and controllers). Conceptually relies on sEMG recognition and visual hand tracking. An example - keyboard outlines in a notebook (can be hand-drawn) or a printed QWERTY layout. Something like [[3](https://arxiv.org/html/2410.20081v3 "emg2qwerty")]. Relies on OART sEMG decode and  OART Media Pipe hand tracking. Needs an OART-DT Double truth system, that captures 2 independent signals (tracked joint movements and electrical activity) and can supply ground truth (such as the ''disconnected'' keyboard can be actually connected and keystrokes are well-recorded with timespamps).  |
+| **CHEBU** | 🟩 | Cheburashka plush toy as a controller subproject |
+| **XRC** | 🟨 + 🟥 | XR Stadium subproject. Watching (e)sports together on a shared canvas. Old ideas, new life. |
+| **XRF** | 🟥 | XR Bonfire / shared collaborative projection. Relies on smoky environment (smoke machine or shisha) and multiple projective devices. |
+| **XRA** | 🟥 | XR art performances. |
+| **XRT** | 🟩 + 🟥 | XR Thesis. Tracking of a little black book, tracking hands via MediaPipe, projected visuals and texts complimenting the content of the book. |
+| **DEMO** | 🟥 | Asset generation and running demos. Includes scripts for blender integration, concat video editor and a gallery of produced artifacts |
+| **XRBG** | 🟩 + 🟥 | XR Board Games |
 
 
 ## Repository layout
